@@ -4,7 +4,7 @@ jQuery(document).ready(function ($) {
     //initialise Stellar.js
     $(window).stellar({
 		horizontalScrolling: false,
-		verticalOffset: 0
+		hideDistantElements: true
     });
 
     //Cache some variables
