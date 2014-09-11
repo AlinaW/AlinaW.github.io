@@ -54,7 +54,7 @@ body strong {
     width: 960px;
 }
 
-.bubble, .bubble2 {
+.bubble, .bubble2, .bubble3 {
 	background-color: rgba(255,255,255,.35);
 	width: 320px;
 	height: 320px;
@@ -74,6 +74,11 @@ body strong {
 .bubble-text {
 	display: block;
 	padding-top: 65px;
+}
+
+.bubble-text a {
+	color: #856b92;
+	font-size: .75em;
 }
 
 #slide1 {
@@ -97,6 +102,11 @@ body strong {
 #slide2 .bubble2 {
 	top: 20%;
 	right: 25px;
+}
+
+#slide4 .bubble3 {
+	top: 30%;
+	right: 100px;
 }
 
 .button {
@@ -135,6 +145,11 @@ body strong {
 
 #slide2 {
     background-image: url("images/los_angeles.jpg");
+    background-size: cover;
+}
+
+#slide4 {
+    background-image: url("images/me_and_argy.jpg");
     background-size: cover;
 }
 
