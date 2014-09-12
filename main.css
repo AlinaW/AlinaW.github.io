@@ -236,7 +236,7 @@ body strong {
 	}
 	
 	.slide {
-		background-position: center;
+		background-position-x: center !important;
 	}
 }
 
