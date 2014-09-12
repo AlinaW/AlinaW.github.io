@@ -76,6 +76,10 @@ body strong {
 	padding-top: 65px;
 }
 
+.break-on-desktop {
+	display: block;
+}
+
 .bubble-text a {
 	color: #856b92;
 	font-size: .75em;
@@ -236,8 +240,40 @@ body strong {
 	}
 	
 	.slide {
-		background-position-x: center !important;
+		background-position-x: center;
 	}
+	
+	#slide4 {
+		background-position-x: -45px;
+	}
+	
+	.bubble {
+		width: 90%;
+		height: auto;
+		padding: 5%;
+		border-radius: none;
+	}
+	
+	.bubble-inner-wrapper {
+		border-radius: none;
+		font-size: 1.5em;
+	}
+	
+	.bubble-text {
+		padding: 5% 0;
+	}
+	
+	.break-on-desktop {
+		display: inline;
+	}
+	
+	#slide1 .bubble,
+	#slide2 .bubble,
+	#slide4 .bubble {
+		top: 0;
+		right: 0;
+	}
+	
 }
 
 
