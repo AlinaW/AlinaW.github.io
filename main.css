@@ -263,6 +263,10 @@ body strong {
 		padding: 5% 0;
 	}
 	
+	#slide4 .bubble-text {
+		padding-top: 5%;
+	}
+	
 	.break-on-desktop {
 		display: inline;
 	}
