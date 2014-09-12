@@ -1,12 +1,5 @@
 jQuery(document).ready(function ($) {
 
-
-    //initialise Stellar.js
-    $(window).stellar({
-		horizontalScrolling: false,
-		hideDistantElements: true
-    });
-
     //Cache some variables
     slide = $('.slide');
     button = $('.button');
