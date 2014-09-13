@@ -124,6 +124,7 @@ body strong {
     height: 36px;
     left: 50%;
     position: absolute;
+	z-index: 9999;
     width: 150px;
 	border-radius: 50% / 100%;
 	text-shadow: 0px 1px 0 rgba(255, 255, 255, 0.7);
@@ -164,31 +165,55 @@ body strong {
 #slide3 {
     background-color: #d8d8d8;
 }
-#slide3 #tree {
+
+.purple-tree, .grey-tree {
 	display: block;
-	width: 70px;
-	height: 419px;
-    left: 192px;
     position: absolute;
     bottom: 0;
+	z-index: 99;
 }
 
-#slide3 #big_tree {
-	display: block;
+#tree {
+	width: 95px;
+	height: 572px;
+    left: 192px;
+}
+
+#tree2 {
+	width: 38px;
+	height: 229px;
+    left: 306px;
+}
+
+#big_tree {
 	width: 220px;
 	height: 532px;
     left: 624px;
-    position: absolute;
-    bottom: 0;
+}
+
+#tree3 {
+	width: 80px;
+	left: 395px;
+}
+
+#tree4 {
+	right: 54px;
+	width: 52px;
+	height: 313px;
 }
 
 .skill-bubble {
 	position: absolute;
-	width: 150px;
-	height: 150px;
-	border-radius: 95px;
+	width: 100px;
+	height: 100px;
+	border-radius: 65px;
 	background-color: rgba(255,255,255,.4);
-	padding: 20px;
+	padding: 15px;
+	z-index: 999;
+}
+
+.skill-bubble.grey-skill {
+	background-color: rgba(255,255,255,.55);
 }
 
 .skill-bubble-inner {
@@ -197,7 +222,19 @@ body strong {
 	text-align: center;
 	border-radius: 75px;
 	font-size: 1.2em;
-	line-height: 150px;
+	line-height: 100px;
+}
+
+.grey-skill .skill-bubble-inner {
+	background-color: #9b84a6;
+	color: #fff;
+	line-height: 65px;
+}
+
+.skill-bubble-inner.two-lines-skill {
+	line-height: 1.2em;
+	padding-top: 23px;
+	height: 77px;
 }
 
 .two-lines {
@@ -206,31 +243,50 @@ body strong {
 	line-height: 1.1em;
 }
 
-#html.skill-bubble {
-	bottom: 353px;
-	left: 42px;
+#html {
+	bottom: 516px;
+	left: 107px;
 }
 
-#css.skill-bubble {
-	bottom: 321px;
-	left: 238px;
+#css {
+	bottom: 491px;
+	left: 251px;
 }
 
-#photoshop.skill-bubble {
-	bottom: 409px;
-	right: 320px;
+#photoshop {
+	bottom: 329px;
+	left: 313px;
 }
 
-#illustrator.skill-bubble {
-	bottom: 517px;
-	right: 147px;
+#illustrator {
+	bottom: 320px;
+	left: 451px;
 }
 
-#js.skill-bubble {
-	bottom: 413px;
-	right: -35px;
+#js {
+	bottom: 420px;
+	right: 20px;
 }
 
+#angularjs {
+	bottom: 515px;
+	right: 168px;
+}
+
+#javascript {
+	bottom: 446px;
+	right: 314px;
+}
+
+#testing {
+	bottom: 200px;
+	left: 259px;
+}
+
+#uiux {
+	bottom: 277px;
+	right: 8px;
+}
 
 /* mobile */
 
