@@ -174,15 +174,15 @@ body strong {
 }
 
 #tree {
-	width: 95px;
-	height: 572px;
-    left: 192px;
+	width: 102px;
+	height: 614px;
+    left: 133px;
 }
 
 #tree2 {
 	width: 38px;
 	height: 229px;
-    left: 306px;
+    left: 280px;
 }
 
 #big_tree {
@@ -200,6 +200,12 @@ body strong {
 	right: 54px;
 	width: 52px;
 	height: 313px;
+}
+
+#tree5 {
+	right: 318px;
+	width: 40px;
+	height: 188px;
 }
 
 .skill-bubble {
@@ -237,6 +243,12 @@ body strong {
 	height: 77px;
 }
 
+#mgmt .skill-bubble-inner {
+	font-size: 1em;
+	padding-top: 27px;
+	height: 73px;
+}
+
 .two-lines {
 	display: block;
 	padding-top: 51px;
@@ -244,13 +256,13 @@ body strong {
 }
 
 #html {
-	bottom: 516px;
-	left: 107px;
+	bottom: 557px;
+	left: 50px;
 }
 
 #css {
-	bottom: 491px;
-	left: 251px;
+	bottom: 519px;
+	left: 205px;
 }
 
 #photoshop {
@@ -280,12 +292,17 @@ body strong {
 
 #testing {
 	bottom: 200px;
-	left: 259px;
+	left: 233px;
 }
 
 #uiux {
 	bottom: 277px;
 	right: 8px;
+}
+
+#mgmt {
+	bottom: 167px;
+	right: 272px;
 }
 
 /* mobile */
