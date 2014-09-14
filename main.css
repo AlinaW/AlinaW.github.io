@@ -513,6 +513,14 @@ body strong {
 	
 	#slide3 .skill-bubble {
 		position: static;
+		float: left;
+		border-radius: 0;
+		width: 27%;
+		padding: 3%;
+	}
+	
+	#slide3 .skill-bubble-inner {
+		border-radius: 0;
 	}
 	
 }
