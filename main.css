@@ -506,6 +506,15 @@ body strong {
 		right: 0;
 	}
 	
+	#slide3 .purple-tree,
+	#slide3 .grey-tree {
+		display: none;
+	}
+	
+	#slide3 .skill-bubble {
+		position: static;
+	}
+	
 }
 
 
