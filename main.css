@@ -542,9 +542,13 @@ body strong {
 		animation: none !important;
 		background-color: rgba(255,255,255,.7);
 	}
+	
+	.grey-skill .skill-bubble {
+		background-color: none;
+	}
 
 	#slide3  .grey-skill .skill-bubble-inner {
-		background-color: rgba(135,107,148,.35);
+		background-color: rgba(135,107,148,.8);
 	}
 
 	#tree5 {
