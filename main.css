@@ -208,14 +208,56 @@ body strong {
 	height: 188px;
 }
 
+@-webkit-keyframes animateouter {
+  from {
+    background-color: rgba(255,255,255,.25);
+  }
+
+  to {
+    background-color: rgba(255,255,255,.6);
+  }
+}
+
+@keyframes animateouter {
+  from {
+    background-color: rgba(255,255,255,.25);
+  }
+
+  to {
+    background-color: rgba(255,255,255,.6);
+  }
+}
+
 .skill-bubble {
 	position: absolute;
 	width: 100px;
 	height: 100px;
 	border-radius: 65px;
-	background-color: rgba(255,255,255,.4);
 	padding: 15px;
 	z-index: 999;
+	background-color: rgba(255,255,255,.25);
+	-webkit-animation: animateouter 1.5s linear 0s infinite alternate;
+	animation: animateouter 1.5s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes animateinner {
+  from {
+    background-color: rgba(255,255,255,.45);
+  }
+
+  to {
+    background-color: rgba(255,255,255,1);
+  }
+}
+
+@keyframes animateinner {
+  from {
+    background-color: rgba(255,255,255,.45);
+  }
+
+  to {
+    background-color: rgba(255,255,255,1);
+  }
 }
 
 .skill-bubble.grey-skill {
@@ -223,18 +265,42 @@ body strong {
 }
 
 .skill-bubble-inner {
-	background-color: rgba(255,255,255,.6);
 	height: 100%;
 	text-align: center;
 	border-radius: 75px;
 	font-size: 1.2em;
 	line-height: 100px;
+	background-color: rgba(255,255,255,.45);
+	-webkit-animation: animateinner 1.5s linear 0s infinite alternate;
+	animation: animateinner 1.5s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes animateinner-purple {
+  from {
+    background-color: #9b84a6;
+  }
+
+  to {
+    background-color: #896c98;
+  }
+}
+
+@keyframes animateinner-purple {
+  from {
+    background-color: #9b84a6;
+  }
+
+  to {
+    background-color: #896c98;
+  }
 }
 
 .grey-skill .skill-bubble-inner {
-	background-color: #9b84a6;
 	color: #fff;
+	background-color: #9b84a6;
 	line-height: 65px;
+	-webkit-animation: animateinner-purple 1.5s linear 0s infinite alternate;
+	animation: animateinner-purple 1.5s linear 0s infinite alternate;
 }
 
 .skill-bubble-inner.two-lines-skill {
@@ -304,6 +370,95 @@ body strong {
 	bottom: 167px;
 	right: 272px;
 }
+
+.cloud-text {
+	position: absolute;
+	color: #fff;
+	font-size: 1.2em;
+}
+
+@-webkit-keyframes move-cloud {
+	0% { left: 5%; }
+	100% { left: 100%; }
+}
+
+@keyframes move-cloud {
+	0% { left: 5%; }
+	100% {left: 100%; }
+}
+
+#cloud1 {
+	position: absolute;
+	width: 130px;
+	top: 30px;
+	-webkit-animation: move-cloud 45s linear 0 infinite alternate;
+	animation: move-cloud 45s linear 0 infinite alternate;
+}
+
+@-webkit-keyframes move-cloud2 {
+	0% { right: 50%; }
+	25% { right: 0%;}
+	50% { right: 100%; }
+	75% { right: 0%;}
+	100% { right: 50%; }
+}
+
+@keyframes move-cloud2 {
+	0% { right: 50%; }
+	25% { right: 0%;}
+	50% { right: 100%; }
+	75% { right: 0%;}
+	100% { right: 50%; }
+}
+
+#cloud2 {
+	position: absolute;
+	width: 80px;
+	top: 60px;
+	-webkit-animation: move-cloud2 65s linear 0 infinite alternate;
+	animation: move-cloud2 65s linear 0 infinite alternate;
+}
+
+@-webkit-keyframes move-cloud3 {
+	0% { right: 10%; }
+	100% { right: 100%; }
+}
+
+@keyframes move-cloud3 {
+	0% { right: 10%; }
+	100% { right: 100%; }
+}
+
+#cloud3 {
+	position: absolute;
+	width: 50px;
+	top: 10px;
+	-webkit-animation: move-cloud3 45s linear 0 infinite alternate;
+	animation: move-cloud3 45s linear 0 infinite alternate;
+}
+
+@-webkit-keyframes move-cloud4 {
+	0% { right: 30%; }
+	50% { right: 70%;}
+	100% { right: 50%; }
+}
+
+@keyframes move-cloud4 {
+	0% { right: 30%; }
+	50% { right: 70%;}
+	100% { right: 50%; }
+}
+
+#cloud4 {
+	position: absolute;
+	width: 100px;
+	top: 65px;
+	-webkit-animation: move-cloud4 65s linear 0 infinite alternate;
+	animation: move-cloud4 65s linear 0 infinite alternate;
+}
+
+
+
 
 /* mobile */
 
