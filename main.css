@@ -140,11 +140,17 @@ body strong {
 }
 
 .button:hover {
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.9);
 	color: #596067;
 	cursor: pointer;
 	text-shadow: 0px 1px 0 rgba(255, 255, 255, 0.7);
-	border-top: 3px solid rgba(255,255,255, .9);
+	border-top: 3px solid rgba(255,255,255, 1);
+}
+
+.arrow-down {
+	width: 16px;
+	fill: #596067;
+	height: 7px;
 }
 
 #slide1 {
@@ -193,6 +199,7 @@ body strong {
 
 #tree3 {
 	width: 80px;
+	height: 374px;
 	left: 395px;
 }
 
@@ -390,6 +397,7 @@ body strong {
 #cloud1 {
 	position: absolute;
 	width: 130px;
+	height: 78px;
 	top: 30px;
 	-webkit-animation: move-cloud 45s linear 0 infinite alternate;
 	animation: move-cloud 45s linear 0 infinite alternate;
@@ -414,6 +422,7 @@ body strong {
 #cloud2 {
 	position: absolute;
 	width: 80px;
+	height: 46px;
 	top: 60px;
 	-webkit-animation: move-cloud2 65s linear 0 infinite alternate;
 	animation: move-cloud2 65s linear 0 infinite alternate;
@@ -432,6 +441,7 @@ body strong {
 #cloud3 {
 	position: absolute;
 	width: 50px;
+	height: 25px;
 	top: 10px;
 	-webkit-animation: move-cloud3 45s linear 0 infinite alternate;
 	animation: move-cloud3 45s linear 0 infinite alternate;
@@ -452,6 +462,7 @@ body strong {
 #cloud4 {
 	position: absolute;
 	width: 100px;
+	height: 50px;
 	top: 65px;
 	-webkit-animation: move-cloud4 65s linear 0 infinite alternate;
 	animation: move-cloud4 65s linear 0 infinite alternate;
@@ -532,7 +543,7 @@ body strong {
 		background-color: rgba(255,255,255,.7);
 	}
 
-	.grey-skill .skill-bubble-inner {
+	#slide3  .grey-skill .skill-bubble-inner {
 		background-color: rgba(135,107,148,.35);
 	}
 
