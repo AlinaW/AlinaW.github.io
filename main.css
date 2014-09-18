@@ -85,7 +85,7 @@ body strong {
 	font-size: .75em;
 }
 
-#slide4 .bubble-text {
+#slide5 .bubble-text {
 	padding-top: 45px;
 }
 
@@ -112,7 +112,7 @@ body strong {
 	right: 25px;
 }
 
-#slide4 .bubble {
+#slide5 .bubble {
 	top: 30%;
 	right: 100px;
 }
@@ -164,6 +164,10 @@ body strong {
 }
 
 #slide4 {
+	 background-color: #9b84a6;
+}
+
+#slide5 {
     background-image: url("images/me_and_argy.jpg");
     background-size: cover;
 }
@@ -471,6 +475,162 @@ body strong {
 
 
 
+/* Projects slide */
+
+#projects_list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#projects_list li {
+	display: block;
+	position: relative;
+	width: 300px;
+	height: 300px;
+	float: left;
+	border-radius: 50%;
+	margin-right: 15px;
+	margin-top: 45px;
+	font-size: 1.2em;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-repeat: no-repeat;
+}
+
+#projects_list li:nth-child(-n+3) {
+	margin-top: 15px;
+}
+
+#projects_list li:nth-child(3n+3) {
+	margin-right: 0;
+}
+
+#projects_list li:nth-child(odd) {
+	background-color: #a894b2;
+	border: 5px solid #d2c8d7;
+	color: #fff;
+	text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+}
+
+#projects_list li:nth-child(even) {
+	background-color: #cbbfd1;
+	border: 5px solid #fff;
+	color: #654873;
+	text-shadow: 1px 1px 0 rgba(255,255,255,.68);
+}
+
+#projects_list li:after {
+	content: "";
+	display: block;
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	margin-left: -30px;
+	border-radius: 50%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #fff;
+}
+
+#projects_list li:nth-child(odd):after {
+	background-color: #e0d5e5;
+}
+
+li.design:after {
+	background-size: 50%;
+	background-image: url(images/paint_brush.svg);
+}
+
+li.code:after {
+	background-size: 50%;
+	background-image: url(images/code_icon.svg);
+}
+
+li.design-code:after {
+	background-size: 70%;
+	background-image: url(images/code_design_icon.svg);
+}
+
+.project-title {
+	display: block;
+	padding: 203px 6% 0;
+}
+
+.project-title.one-line {
+	padding-top: 223px;
+}
+
+#cherry_hill {
+	background-image: url(images/cherry_hill.png);
+	background-position: center top;
+	background-size: auto 195px;
+}
+
+#edlio_corp {
+	background-image: url(images/edlio_corp.png);
+	background-position: center top;
+	background-size: auto 307px;
+}
+
+#staff_directory {
+	background-image: url(images/staff_directory.png);
+	background-position: center top;
+	background-size: auto 200px;
+}
+
+#common_core {
+	background-image: url(images/common_core.png);
+	background-position: center 8px;
+	background-size: auto 197px;
+}
+
+#cap_corgi {
+	background-image: url(images/cap_corgi.png);
+	background-position: center 20px;
+	background-size: auto 186px;
+}
+
+#pkf_standard {
+	background-image: url(images/pkf_standard.png);
+	background-position: center top;
+	background-size: auto 307px;
+}
+
+#projects_list li:hover {
+	background-color: #ede6f0;
+	cursor: pointer;
+	border-color: #62426f;
+	color: #654572 !important;
+	text-shadow: 1px 1px 0 rgba(255,255,255, .9);
+}
+
+#projects_list li:hover:after {
+	background-color: #654572 !important;
+	line-height: 60px;
+	font-family: "courier", arila, sans-serif;
+	font-size: 14px;
+	background-image: none;
+	color: #fff;
+	text-shadow: none;
+}
+
+#projects_list li.design:hover:after {content: "design";}
+#projects_list li.code:hover:after {content: "code";}
+#projects_list li.design-code:hover:after {
+	content: "design & code";
+	line-height: 1em;
+	font-size: 13px;
+	padding-top: 17px;
+	height: 43px;
+}
+
+
 /* mobile */
 
 @media only screen and (max-width : 480px) {
@@ -482,7 +642,7 @@ body strong {
 		background-position-x: center;
 	}
 	
-	#slide4 {
+	#slide5 {
 		background-position-x: -45px;
 	}
 	
@@ -502,7 +662,7 @@ body strong {
 		padding: 5% 0;
 	}
 	
-	#slide4 .bubble-text {
+	#slide5 .bubble-text {
 		padding-top: 5%;
 	}
 	
@@ -512,7 +672,7 @@ body strong {
 	
 	#slide1 .bubble,
 	#slide2 .bubble,
-	#slide4 .bubble {
+	#slide5 .bubble {
 		top: 0;
 		right: 0;
 	}
