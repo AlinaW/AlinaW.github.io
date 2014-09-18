@@ -501,6 +501,11 @@ body strong {
 	background-repeat: no-repeat;
 }
 
+#projects_list li > a {
+	display: block;
+	text-decoration: none;
+}
+
 #projects_list li:nth-child(-n+3) {
 	margin-top: 15px;
 }
@@ -512,6 +517,9 @@ body strong {
 #projects_list li:nth-child(odd) {
 	background-color: #a894b2;
 	border: 5px solid #d2c8d7;
+}
+
+#projects_list li:nth-child(odd) a {
 	color: #fff;
 	text-shadow: 1px 1px 0 rgba(0,0,0,.3);
 }
@@ -519,6 +527,9 @@ body strong {
 #projects_list li:nth-child(even) {
 	background-color: #cbbfd1;
 	border: 5px solid #fff;
+}
+
+#projects_list li:nth-child(even) a {
 	color: #654873;
 	text-shadow: 1px 1px 0 rgba(255,255,255,.68);
 }
@@ -606,6 +617,9 @@ li.design-code:after {
 	background-color: #ede6f0;
 	cursor: pointer;
 	border-color: #62426f;
+}
+
+#projects_list li:hover > a {
 	color: #654572 !important;
 	text-shadow: 1px 1px 0 rgba(255,255,255, .9);
 }
