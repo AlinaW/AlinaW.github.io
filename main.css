@@ -601,15 +601,15 @@ li.design-code:after {
 }
 
 #cap_corgi {
-	background-image: url(images/cap_corgi.png);
+	background-image: url(images/beer-labels.png);
 	background-position: center 20px;
 	background-size: auto 186px;
 }
 
 #pkf_standard {
-	background-image: url(images/pkf_standard.png);
-	background-position: center top;
-	background-size: auto 307px;
+	background-image: url(images/myfab-app.png);
+	background-position: center 22px;
+	background-size: auto 167px;
 }
 
 #projects_list li:hover {
@@ -643,6 +643,19 @@ li.design-code:after {
 	height: 43px;
 }
 
+/* Beer labels */
+.beer-label {
+  width: 33.3%;
+  float: left;
+  min-width: 300px;
+}
+
+.beer-label img {
+  display: block;
+  max-width: 400px;
+  width: 90%;
+  margin: 0 auto;
+}
 
 /* mobile */
 
