@@ -666,7 +666,6 @@ li.design-code:after {
 	
 	.slide {
 		background-position-x: center;
-    height: auto;
 	}
 	
 	#slide5 {
@@ -751,6 +750,10 @@ li.design-code:after {
 	#cloud1 {
 		display: none;
 	}
+  
+  #slide4 {
+    height: auto;
+  }
 	
 }
 
