@@ -402,8 +402,8 @@ body strong {
 	width: 130px;
 	height: 78px;
 	top: 30px;
-	-webkit-animation: move-cloud 45s linear 0 infinite alternate;
-	animation: move-cloud 45s linear 0 infinite alternate;
+	-webkit-animation: move-cloud 45s linear 0s infinite;
+	animation: move-cloud 45s linear 0s infinite;
 }
 
 @-webkit-keyframes move-cloud2 {
@@ -427,8 +427,8 @@ body strong {
 	width: 80px;
 	height: 46px;
 	top: 60px;
-	-webkit-animation: move-cloud2 65s linear 0 infinite alternate;
-	animation: move-cloud2 65s linear 0 infinite alternate;
+	-webkit-animation: move-cloud2 65s linear 0s infinite;
+	animation: move-cloud2 65s linear 0s infinite;
 }
 
 @-webkit-keyframes move-cloud3 {
@@ -446,8 +446,8 @@ body strong {
 	width: 50px;
 	height: 25px;
 	top: 10px;
-	-webkit-animation: move-cloud3 45s linear 0 infinite alternate;
-	animation: move-cloud3 45s linear 0 infinite alternate;
+	-webkit-animation: move-cloud3 45s linear 0s infinite;
+	animation: move-cloud3 45s linear 0s infinite;
 }
 
 @-webkit-keyframes move-cloud4 {
@@ -467,8 +467,8 @@ body strong {
 	width: 100px;
 	height: 50px;
 	top: 65px;
-	-webkit-animation: move-cloud4 65s linear 0 infinite alternate;
-	animation: move-cloud4 65s linear 0 infinite alternate;
+	-webkit-animation: move-cloud4 65s linear 0s infinite;
+	animation: move-cloud4 65s linear 0s infinite;
 }
 
 
@@ -666,6 +666,7 @@ li.design-code:after {
 	
 	.slide {
 		background-position-x: center;
+    height: auto;
 	}
 	
 	#slide5 {
@@ -752,6 +753,4 @@ li.design-code:after {
 	}
 	
 }
-
-
 
