@@ -37,6 +37,10 @@ body {
 	color: #23242b;
 }
 
+a {
+  color: #23242b;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -196,7 +200,9 @@ p {
   background-color: #e5e5e5;
 }
 
-
+#contact {
+  clear: both;
+}
 
 
 
