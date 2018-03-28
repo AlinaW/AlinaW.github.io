@@ -54,19 +54,19 @@ nav {
   margin: 0 auto;
 }
 
-nav ul {
+.nav-wrapper ul {
   list-style: none;
   padding: 0;
   margin: 0;
   float: right;
 }
 
-nav li {
+.nav-wrapper li {
   margin: 0 1em;
   float: left;
 }
 
-nav li a, .home-link {
+.nav-wrapper li a, .home-link {
   padding: 1em;
   display: block;
   color: #23242b;
@@ -125,11 +125,19 @@ nav li a, .home-link {
     width: 100%;
 }
 
-.wrapper {
+.wrapper,
+.project-step {
     margin: 0 auto;
     position: relative;
     width: 960px;
-    padding-top: 6em;
+}
+
+.wrapper {
+  padding-top: 6em;
+}
+
+.project-step {
+  padding-top: 3em;
 }
 
 #who_am_i {
@@ -276,6 +284,18 @@ p {
 
 /* Projects themselves */
 
+.about-project {
+  width: 70%;
+}
+
+blockquote {
+  border-left: 6px solid rgba(0,0,0,.2);
+  margin: 2em 0 1em;
+  padding-left: 1em;
+  font-size: 1.5em;
+  line-height: 1.6em;
+}
+
 .project-page .slide {
   height: auto;
 }
@@ -304,6 +324,21 @@ p {
 
 .thoughts h2:before {
   content: "4";
+}
+
+.project-step ul {
+  margin: 2em 0 0 2em;
+  padding: 0;
+}
+
+.project-step li {
+  margin: 0 0 1.5em;
+  padding: 0;
+}
+
+.project-step-subtitle {
+  font-weight: bold;
+  display: block;
 }
 
 .step-desc {
