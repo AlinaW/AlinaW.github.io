@@ -45,7 +45,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: #23242b;
   z-index: 9999;
 }
 
@@ -69,7 +69,7 @@ nav {
 .nav-wrapper li a, .home-link {
   padding: 1em;
   display: block;
-  color: #23242b;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -119,7 +119,6 @@ nav {
 
 .slide {
     background-attachment: fixed;
-    height: 100%;
     position: relative;
     z-index: 99;
     width: 100%;
@@ -134,6 +133,10 @@ nav {
 
 .wrapper {
   padding-top: 6em;
+}
+
+.top-slide .wrapper {
+  padding-top: 9em;
 }
 
 .project-step {
@@ -327,13 +330,14 @@ blockquote {
 }
 
 .project-step ul {
-  margin: 2em 0 0 2em;
+  margin: 2em 0 0;
   padding: 0;
 }
 
 .project-step li {
   margin: 0 0 1.5em;
   padding: 0;
+  list-style: none;
 }
 
 .project-step-subtitle {
@@ -346,6 +350,10 @@ blockquote {
   width: 60%;
 }
 
+.help-text {
+  font-size: 12px;
+}
+
 .image-wrapper-left {
   float: left;
   padding-right: 30px;
@@ -355,8 +363,36 @@ blockquote {
   display: block;
 }
 
+.wide-image-container {
+  margin: 2em auto;
+}
+
+.wide-image {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 1px 6px 0px rgba(0,0,0,.1);
+  border: 1px solid #E3E6E9;
+}
+
+.wide-image-container figcaption {
+  text-align: center;
+  font-size: .75em;
+  color: #767981;
+  padding-top: .8em;
+}
+
+.wide-image.combined {
+  border: 0;
+  box-shadow: none;
+}
+
 #comic img {
   width: 400px;
+}
+
+#sticker img {
+  width: 280px;
 }
 
 /* Beer labels */
