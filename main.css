@@ -193,6 +193,19 @@ p {
   color: #ea7526;
 }
 
+#non_design_work {
+  clear: left;
+  padding-top: 2em;
+}
+
+#non_design_work li {
+  padding-bottom: .8em;
+}
+
+#non_design_work li:last-child {
+  padding-bottom: none;
+}
+
 .column {
   width: 45%;
   float: left;
