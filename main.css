@@ -435,6 +435,16 @@ blockquote {
   margin: 0 auto;
 }
 
+/* Archived projects */
+
+.content-wrapper {
+  width: 70%;
+}
+
+.year-range {
+  font-size: .6em;
+}
+
 /* mobile */
 
 @media only screen and (max-width : 480px) {
