@@ -217,6 +217,12 @@ p {
   margin-bottom: 2em;
 }
 
+#hire_me h2 {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+/*
 #hire_me h2:after{
   content: '';
   width: 60%;
@@ -230,7 +236,8 @@ p {
   transform: skewY(3deg);
   -webkit-transform: skew(-30deg, 0deg);
   transform: skew(-30deg, 0deg);
-}
+}*/
+
 
 #hire_me p {
   padding-left: 1em;
