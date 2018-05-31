@@ -196,6 +196,7 @@ p {
 #non_design_work {
   clear: left;
   padding-top: 2em;
+  width: 70%;
 }
 
 #non_design_work li {
@@ -216,7 +217,7 @@ p {
   margin-bottom: 2em;
 }
 
-#hire_me .column h2:after{
+#hire_me h2:after{
   content: '';
   width: 60%;
   height: 1em;
@@ -229,10 +230,6 @@ p {
   transform: skewY(3deg);
   -webkit-transform: skew(-30deg, 0deg);
   transform: skew(-30deg, 0deg);
-}
-
-#you_want {
-  padding-right: 10%;
 }
 
 #hire_me p {
@@ -248,15 +245,6 @@ p {
   top: 6px;
   left: 0;
   background-color: #d4b9e1;
-}
-
-#dont_want h2:after {
-  background-color: #e5e5e5;
-  width: 80%;
-}
-
-#dont_want p:before {
-  background-color: #e5e5e5;
 }
 
 .contact {
@@ -342,27 +330,48 @@ blockquote {
   left: 0px;
 }
 
-.research h2:before {
+.step2 h2:before {
   content: "2";
 }
 
-.design h2:before {
+.step3 h2:before {
   content: "3";
 }
 
-.thoughts h2:before {
+.step4 h2:before {
   content: "4";
 }
 
-.project-step ul {
+.step5 h2:before {
+  content: "5";
+}
+
+.step6 h2:before {
+  content: "6";
+}
+
+.list-after {
+  margin-bottom: .2em;
+}
+
+.list-after + ul {
+  margin-top: 0;
+  margin-bottom: 1.6em;
+}
+
+.long-list ul {
   margin: 2em 0 0;
   padding: 0;
 }
 
-.project-step li {
+.long-list li {
   margin: 0 0 1.5em;
   padding: 0;
   list-style: none;
+}
+
+.step-desc li {
+  margin-bottom: .2em;
 }
 
 .project-step-subtitle {
@@ -370,9 +379,12 @@ blockquote {
   display: block;
 }
 
-.step-desc {
+.step-desc, #you_want {
+  width: 70%;
+}
+
+.wide-image-container, .step-desc {
   padding-left: 4.8em;
-  width: 60%;
 }
 
 .help-text {
@@ -389,15 +401,24 @@ blockquote {
 }
 
 .wide-image-container {
-  margin: 2em auto;
+  display: inline-block;
+  margin: 1.5em auto;
 }
 
 .wide-image {
   display: block;
-  width: 100%;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 600px;
   margin: 0 auto;
   box-shadow: 0 1px 6px 0px rgba(0,0,0,.1);
   border: 1px solid #E3E6E9;
+}
+
+.full-width .wide-image {
+  width: 100%;
+  max-height: none;
 }
 
 .wide-image-container figcaption {

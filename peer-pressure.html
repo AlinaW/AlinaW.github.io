@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Alina Bochkacheva</title>
+		<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<link rel="stylesheet" href="main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand|Montserrat:300,400,600" rel="stylesheet">
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+		
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-54802940-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+	</head>
+	
+	<body class="project-page">
+		<nav class="clearfix">
+			<div class="nav-wrapper">
+				<a class="home-link" href="index.html">&#171; Go home</a>
+					<ul>
+						<li><a href="#why_did_we">What is it?</a></li>
+						<li><a href="#scope">Scope</a></li>
+						<li><a href="#design_process">Ideas</a></li>
+						<li><a href="#hifi">Prototypes</a></li>
+						<li><a href="#usability">Usability testing</a></li>
+					</ul>
+			</div>
+		</nav>
+		
+		<section class="slide top-slide">
+			<div class="wrapper">
+        <h1 class="title" id="main_intro">
+				  Project Peer Pressure 
+				</h1>
+				
+				<div class="about-project">
+					<p>Once upon a time, Duo gave an engineering team a whole week to work on a hack project. The work described below was done within one week in collaboration with engineers and data scientists. I was the only designer on this project.</p>
+				</div>
+			</div>
+		</section><!--End intro-->
+
+		<section class="slide step1" id="why_did_we">
+			<div class="project-step">
+				<h2>
+					What is this mini project about?
+				</h2>
+					
+				<div class="step-desc">
+					<p>When you are in a security industry (and generally any other industry), you look to your peers to get a better understanding of how you can secure your environment. This understanding paints a better picture of where you can improve. In a corporate context, sometimes it even helps an IT administrator (a persona we named Gary) convince leadership to invest in areas they previously didn’t think were necessary.</p>
+					
+					<p>So we thought, what if you could compare your organization’s security posture to that of other organizations? What if you could see how many out-of-date devices you have in your environment compared to industry’s average?</p>
+				</div>
+					
+			</div>
+		</section><!--End why-did-we-->
+		
+		<section class="slide step2" id="scope">
+			<div class="project-step">
+				<h2>
+					Setting a scope
+				</h2>
+				<div class="step-desc">
+					<p class="list-after">
+						Since we only had a week to develop this comparison tool, we had to tackle all technical constraints first, and lay out what data we can gather and analyze. We found that we could pull the following information about customer’s environment:
+					</p>
+					<ul>
+						<li>Are devices encrypted?</li>
+						<li>Do devices have a screen lock?</li>
+						<li>Are devices rooted or jailbroken (tampered with)?</li>
+						<li>Are devices running an out-of-date operating system?</li>
+						<li>Are devices running out-of-date browsers?</li>
+						<li>Are devices running out-of-date plugins?</li>
+					</ul>
+					<p class="list-after">
+						Then, we had to decide what to comparing against.
+						<ul>
+							<li>Company of your size?
+							<li>Company in your industry?
+							<li>Or company in your industry and your size?
+						</ul>
+					</p>
+					
+					<p>Comparing against a single criteria wasn’t enough to paint the whole picture. If you are a company in a tech industry with 60 employees, you have a different budget for IT and security than a company with 2500 employees. We decided comparing against both criteria would provide the most benefit to our customers. </p>
+				</div>
+					
+			</div>
+		</section><!--End scope-->
+
+		<section class="slide step3" id="design_process">
+			<div class="project-step">
+				<h2>
+					Sketching ideas
+				</h2>
+					
+				<div class="step-desc">
+					<p>I turned to my favorite tool. Good old paper and pencil, to rapidly sketch different ideas. How could I help Gary to quickly grasp his environment, how could I tell a good story? Many stories are told in words, but Gary got no time to read</p>
+					
+					<p class="list-after"><strong>What would work best?</strong></p>
+					<ul>
+						<li>Side-by-side bar graphs?</li>
+						<li>A pie chart? </li>
+						<li>Is it valuable to show data over time?</li>
+					</ul>
+				</div>
+					
+					<figure class="wide-image-container">
+						<img class="wide-image" src="images/pp/paper-graphs.jpg">
+						<figcaption>Paper Sketch of graph ideas</figcaption>
+					</figure>
+					
+				<div class="step-desc">
+					<p>In this case I only had two variables to compare for each security posture criteria: Gary’s score and a similar company average. Putting two graphs next to each other adds cognitive load, and makes our user work harder to draw the comparison between two graphs. However, putting your organization’s score and average score on the same graph makes it much easier to compare.
+</p>
+					<p class="list-after"><strong>What is the best way to convey how a customer is doing in security hygiene?</strong></p>
+					<ul>
+						<li>Raw percentages?</li>
+						<li>Score grades?</li>
+						<li>Emoticons?</li>
+						<li>Just plain words?</li>
+					</ul>
+				</div>	
+					
+					<figure class="wide-image-container">
+						<img class="wide-image" src="images/pp/paper-comparison.jpg">
+						<figcaption>Paper sketch of visualizing the comparison of two variables</figcaption>
+					</figure>
+					
+			</div>
+		</section><!--End design-->
+		
+		<section class="slide step4" id="hifi">
+			<div class="project-step">
+				<h2>
+					Hi-fidelity prototypes
+				</h2>
+					
+				<div class="step-desc">
+					<p>Once I felt confident about the direction my sketches were going, I began working on hi-fidelity prototypes. We had to move fast for hack week. First, I iterated on different ways to visualize the comparison.</p>
+				</div>
+					
+				<figure class="wide-image-container">
+					<img class="wide-image" src="images/pp/explorations.png">
+					<figcaption>Explorations of visualizations</figcaption>
+				</figure>
+					
+				<div class="step-desc">
+					<p>Then, I needed to identify what other information needed to be presented along with the data. From past customer interviews, I learned that Garys want to print reports. Also, he probably needed to know when the report was actually run. Lastly, an explanation on what we meant under “average” was necessary.</p>
+				</div>
+					
+				<figure class="wide-image-container">
+					<img class="wide-image" src="images/pp/additional-info.png">
+					<figcaption>Additional information</figcaption>
+				</figure>
+					
+				<div class="step-desc">
+					<p>Lastly, data is not useful if you can’t take action on it. I asked myself, how can I help IT administrators to get to a better place, get his score to be in a “green zone”? How can I make him to be proud of what he built? I added the section at the bottom of the report that walked him through leveraging the Duo product. This helps Gary to set policies around the criteria that report is showing.</p>
+				</div>
+					
+				<figure class="wide-image-container">
+					<img class="wide-image" src="images/pp/policies.png">
+					<figcaption>Adding actionable information</figcaption>
+				</figure>
+					
+				</div>
+					
+			</div>
+		</section><!--End hifi-->
+		
+		<section class="slide step5" id="usability">
+			<div class="project-step">
+				<h2>
+					Usability testing/UX interviews
+				</h2>
+					
+				<div class="step-desc">
+					<p class="list-after">I worked with a design researcher to test with 5 IT administrators who use Duo. We put the following questions together:</p>
+					
+					<ol>
+						<li>What does this tool do?</li>
+						<li>What do the labels on the charts indicate to you?</li>
+						<li>What are your impressions of this information?</li>
+						<li>Is any data not provided that you would expect to have displayed?</li>
+						<li>In real life, have you ever needed or wanted this kind of information?
+							<ul>
+						  	<li>What was the situation that led to you needing it?</li>
+						  	<li>How did you ultimately get the information?</li>
+							</ul>
+						</li>
+					</ol>
+					
+					<p>I put together an interactive prototype using Marvel App.</p>
+				</div>
+					
+				<figure class="wide-image-container">
+					<img class="wide-image" src="images/pp/peer-pressure.gif">
+					<figcaption>Interactive prototype animated</figcaption>
+				</figure>
+					
+				<div class="step-desc">
+					<h3>The results of the usability test.</h3>
+					
+					<p class="list-after">Generally, the test was success. We concluded:</p>
+					<ul>
+						<li>Users understood what this tool does</li>
+						<li>Users saw averages as marker of security posture</li>
+						<li>Users said tool useful for reporting upward, evidence for budget asks and “executives like pictures and graphs”</li>
+					</ul>
+					
+
+					<p class="list-after">Some other interesting quotes/insights:</p>
+					<ul>
+						<li>User 5 said it's impossible to do 100% "without making users hate you". These types of quotes help us to build empathy towards our Garys.</li>
+						<li>Users expressed interest in saving the results for comparison to self/others at later point.</li> 
+						<li>User 1 wondered how Duo was getting the data. This reminds us that we always need to be transparent on how we collect and treat customer’s data.</li>
+						<li>User 4 wanted to see improvements over time.</li>
+						<li>User 4 wanted to be able to compare to other industries such as banking. When asked “why”, he clarified he wanted to strive for their score as banks should follow the best security practices and their security posture should be exemplary.</li>
+					</ul>
+					
+					
+			</div>
+		</section><!--End usability-->
+		
+		<!--
+		<section class="slide step6" id="conclusion">
+					<div class="project-step">
+						<h2>
+							Conclusion
+						</h2>
+							
+						<div class="step-desc">
+							<p>Something here</p>
+		
+						</div>
+							
+					</div>
+				</section> -->
+		
+		
+		<footer class="contact">
+			<h1>Want to contact me?</h1>
+			<span>Email me:</span>
+				<a href="mailto:alinabochkacheva@gmail.com">alinabochkacheva@gmail.com</a> or connect with me on 
+				<a href="https://www.linkedin.com/pub/alina-bochkacheva/6a/109/92b" target="_blank">
+						LinkedIn
+					</a>
+		</footer>
+		
+	</body>
+</html>
