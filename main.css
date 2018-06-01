@@ -495,99 +495,29 @@ blockquote {
 
 @media only screen and (max-width : 480px) {
 	.wrapper {
-		width: 100%;
-	}
-	
-	.slide {
-		background-position-x: center;
-	}
-	
-	#slide5 {
-		background-position-x: -45px;
-	}
-	
-	.bubble {
 		width: 90%;
-		height: auto;
-		padding: 5%;
-		border-radius: 0;
-	}
-	
-	.bubble-inner-wrapper {
-		border-radius: 0;
-		font-size: 1.5em;
-	}
-	
-	.bubble-text {
-		padding: 5% 0;
-	}
-	
-	#slide5 .bubble-text {
-		padding-top: 5%;
-	}
-	
-	.break-on-desktop {
-		display: inline;
-	}
-	
-	#slide1 .bubble,
-	#slide2 .bubble,
-	#slide5 .bubble {
-		top: 0;
-		right: 0;
-	}
-	
-	#slide3 .purple-tree {
-		display: none;
-	}
-	
-	#slide3 .skill-bubble {
-		position: relative;
-		z-index: 99999;
-		float: left;
-		border-radius: 0;
-		width: 27%;
-		margin: 3%;
-		padding: 0;
-		-webkit-animation: none !important;
-		animation: none !important;
-		left: auto !important;
-		right: auto !important;
-		bottom: auto !important;
-	}
-
-	#slide3 .skill-bubble-inner {
-		border-radius: 0;
-		-webkit-animation: none !important;
-		animation: none !important;
-		background-color: rgba(255,255,255,.7);
-	}
-	
-	.grey-skill .skill-bubble {
-		background-color: none;
-	}
-
-	#slide3  .grey-skill .skill-bubble-inner {
-		background-color: rgba(135,107,148,.8);
-	}
-
-	#tree5 {
-		left: 5%;
-	}
-
-	#tree4 {
-		left: 45%;
-		width: 18%;
-		height: auto;
-	}
-
-	#cloud1 {
-		display: none;
+    margin-left: 5%;
+    margin-right: 5%;
 	}
   
-  #slide4 {
-    height: auto;
+  #alina_pic {
+    float: none;
+    width: 80%;
+    margin: 0 auto;
   }
+	
+  #who_am_i,
+  #non_design_work,
+  #you_want {
+    width: 100%;
+  }
+  
+  .column {
+    float: none;
+    width: 100%;
+  }
+	
+	
 	
 }
 
