@@ -40,30 +40,36 @@
 		<section class="slide top-slide">
 			<div class="wrapper">
         <h1 class="title" id="main_intro">
-				  Device Insight
+				  Device Insight <span class="year-range">(2018)</span>
 				</h1>
 				
 				<div class="about-project">
-					<p>Device insight was the first data visualization feature that was introduced at Duo Security in early 2016. The goal of this feature was to help our customers (IT administrators) to understand the health state of their devices at a glance. We let this feature live and breath for 1.5 years and then we returned to make it better.</p>
+					<p>Device insight was the first data visualization feature released for Duo Security customers in early 2016. The goal of this feature was to help customers (IT administrators) understand the health state of their devices at a glance. We let this feature live and breathe for 1.5 years and then we revisited the design based on the feedback we gathered from customers.</p>
 				</div>
+				
+				<figure class="wide-image-container" id="di_comparrison">
+					<img class="wide-image" src="images/di/di-old-new.jpg">
+					<figcaption>The old device insight page on the left and the new one on the right</figcaption>
+				</figure>
+				
 			</div>
 		</section><!--End Slide 1-->
 
-		<section class="slide" id="why_did_we">
+		<section class="slide step1" id="why_did_we">
 			<div class="project-step">
 				<h2>
-					Why did we do it in the first place?
+					Why design Device Insight in the first place?
 				</h2>
 					
 				<div class="step-desc">
-					<blockquote cite="">75% of breaches happen because compromised user devices.</blockquote>
-					<p>Every year we are told that most of the breaches happen because of compromised devices or compromised credentials. Compromised devices are devices that are running out of date software such as operating system (os), browser, or plugin. These devices are a threat to security of a company, are open to security vulnerabilities, and leave open doors to data that needs to be protected.</p>
+					<blockquote cite="">75% of breaches happen because of compromised user devices.</blockquote>
+					<p>Most breaches happen because of compromised devices or credentials. Most compromised devices are running out of date software such as operating system (os), browser, or plugin. These devices post a serious security risk for organizations. They are open to security vulnerabilities, and leave open doors to data that needs to be protected.</p>
 				</div>
 					
 			</div>
 		</section><!--End why-did-we-->
 		
-		<section class="slide research" id="di_research">
+		<section class="slide step2" id="di_research">
 			<div class="project-step">
 				<h2>
 					Research (or get your shovel out)
@@ -72,15 +78,15 @@
 					<ul>
 						<li>
 							<span class="project-step-subtitle">Customer visits</span>
-							<p>We visited 5 customer in the Bay area (including Facebook) to talk about how they set requirements around devices, what is their ideal state, and how can we at Duo help them to understand information around devices and take actions.</p>
+							<p>I along side with a user researcher visited 5 customers in the Bay area to talk about how they set requirements around devices, their devices' ideal states, and how can Duo help their administrators understand device information and take actions on that information.</p>
 						</li>
 						<li>
 							<span class="project-step-subtitle">Tech support tickets</span>
-							<p>I searched through our database of tech support tickets with relevant key words. I was able to locate a couple dozen tickets.</p>
+							<p>I searched through our technical support database using relevant key words (such as operating system policy, device insight, out of date browser, etc.) and was able to locate dozens of tickets.</p>
 						</li>
 						<li>
 							<span class="project-step-subtitle">Data and analytics</span>
-							<p>Using internal logging system (Kibana) and Google analytics, I was able to dig into how often customers interact with the current Device page and if they perform any actions on the page.</p>
+							<p>Using Duo’s internal logging system (Kibana) and Google analytics, I was able to uncover how often customers interact with the current Device Insight page and if they perform any actions on the page.</p>
 						</li>
 					</ul>
 				</div>
@@ -88,80 +94,79 @@
 			</div>
 		</section><!--End research-->
 
-		<section class="slide design" id="design_process">
+		<section class="slide step3" id="design_process">
 			<div class="project-step">
 				<h2>
 					Design process
 				</h2>
 					
 				<div class="step-desc">
-					<ul class="long-list">
-						<li>
-							<span class="project-step-subtitle">Step 1: Mind Map</span>
-							<p>First, I created a mind map. This was an excellent exercise to broaden the boundaries of thinking, expose hidden connections, and think “outside of the box”.</p>
-							<p class="help-text">Not sure what mind map is? Read about it.</p>
-							<figure class="wide-image-container">
-								<img class="wide-image" src="images/di/mind-map.png">
-								<figcaption>Mind map sketch</figcaption>
-							</figure>
-						</li><!--End step 1-->
-						
-						<li>
-							<span class="project-step-subtitle">Step 2: Sketching ideas</span>
-							<p>Pencil and paper are the cheapest and most rapid ways to iterate upon your ideas. You can easily share the sketches with your engineers and product managers (PMs), and even show them to customers to get early validations.</p>
-							<figure class="wide-image-container">
-								<img class="wide-image combined" src="images/di/paper_sketches.png">
-								<figcaption>A few of the hand sketches</figcaption>
-							</figure>
-						</li><!--End step 2-->
-						
-						<li>
-							<span class="project-step-subtitle">Step 3: Rough mockups and UX interviews</span>
-							<p>Rough mockups is something in between wireframes and hi-fidelity sketches. The goal here is not to decide on visuals, but rather find a solution. I use rough mockups to start conversations with our customers, something that at Duo we call “UX interviews”. These interviews help us define:</p>
-							<p>
-								- Are we on the right track?<br>
-								- Is there data that is missing?<br>
-								- Can our customers take actions on the displayed data?<br>
-								- Is the terminology something that a customer understands and speaks?
-							</p>
-							<p>Feedback from these UX interviews helps us to iterate very quick and converge to find a solution.</p>
-							<figure class="wide-image-container">
-								<img class="wide-image" src="images/di/wire-many.png">
-							</figure>
+					<span class="project-step-subtitle">Step 1: Mind Map</span>
+					<p>First, I created a mind map. This was an excellent exercise to broaden the boundaries of thinking, expose hidden connections, and think “outside of the box”.</p>
+					<p class="help-text">Not sure what mind map is? <a href="http://www.mindmapping.com/mind-map.php" target="_blank">Read about it.</a></p>
+				</div>
+				
+				<figure class="wide-image-container">
+					<img class="wide-image" src="images/di/mind-map.png" style="max-width: 700px;">
+					<figcaption>Mind map sketch</figcaption>
+				</figure>
+				
+				<div class="step-desc">
+					<span class="project-step-subtitle">Step 2: Sketching ideas</span>
+					<p>Pencil and paper are the cheapest and most rapid ways to iterate upon your ideas. I shared the sketches with my engineers and PMs and showed them to customers to get early validations.</p>
+				</div>
+					
+				<figure class="wide-image-container">
+					<img class="wide-image combined" src="images/di/paper_sketches.png">
+					<figcaption>A few of the hand sketches</figcaption>
+				</figure>
+				
+				<div class="step-desc">
+					<span class="project-step-subtitle">Step 3: Rough mockups and UX interviews</span>
+					<p>Rough mockups is something in between wireframes and hi-fidelity sketches. The goal here is not to decide on visuals, but rather find a solution. I use rough mockups to start conversations with our customers, something that at Duo we call “UX interviews”. These interviews help me define:</p>
+					<p>
+						- Are we on the right track?<br>
+						- Is there data that is missing?<br>
+						- Can our customers take actions on the displayed data?<br>
+						- Is the terminology something that a customer understands and speaks?
+					</p>
+					<p>Feedback from these UX interviews helps me to iterate very quick and converge to find a solution.</p>
+				</div>
+				
+				<figure class="wide-image-container">
+					<img class="wide-image" src="images/di/wire-many.png">
+				</figure>
 							
-							<figure class="wide-image-container">
-								<img class="wide-image" src="images/di/wire-few.png">
-							</figure>
+				<figure class="wide-image-container">
+					<img class="wide-image" src="images/di/wire-few.png">
+				</figure>
 							
-							<figure class="wide-image-container">
-								<img class="wide-image" src="images/di/wire-3.png">
-								<figcaption>A few rough mockups</figcaption>
-							</figure>
+				<figure class="wide-image-container">
+					<img class="wide-image" src="images/di/wire-3.png">
+					<figcaption>A few rough mockups</figcaption>
+				</figure>
+				
+				<div class="step-desc">
+					<p>UX interviews are also great opportunities to bring everyone on the same page. I made it mandatory for my engineers to attend at least a few of these calls.</p>
+
+					<span class="project-step-subtitle">Step 4: Hi-fidelity prototypes and usability testing</span>
+					<p>Now it’s time to create hi-resolution mockups that will be used to create clickable prototype via Marvel app. We use these prototypes to do usability testing with customers as well as internal stakeholders.</p>
+				</div>
 							
-							<p>UX interviews are also great opportunities to bring everyone on the same page. I made it manadatory for my engineers to attend at least a few of these calls.</p>
-						</li><!--End step 3-->
-						
-						<li>
-							<span class="project-step-subtitle">Step 4: Hi-fidelity prototypes and usability testing</span>
-							<p>Now it’s time to create hi-resolution mockups that will be used to create clickable prototype via Marvel app. We use these prototypes to do usability testing with customers as well as internal stakeholders.</p>
+				<figure class="wide-image-container">
+					<img class="wide-image" src="images/di/di-access.png">
+					<figcaption>One of the hi-fidelity mockups</figcaption>
+				</figure>
 							
-							<figure class="wide-image-container">
-								<img class="wide-image" src="images/di/di-access.png">
-								<figcaption>One of the hi-fidelity mockups</figcaption>
-							</figure>
-							
-							<figure class="wide-image-container">
-								<img class="wide-image" src="images/di/DI OS graph.gif">
-								<figcaption>Interactive prototype built in Marvel App</figcaption>
-							</figure>
-							
-						</li><!--End step 4-->
-					</ul>
+				<figure class="wide-image-container">
+					<img class="wide-image" src="images/di/DI OS graph.gif">
+					<figcaption>Interactive prototype built in Marvel App</figcaption>
+				</figure>
 					
 			</div>
 		</section><!--End design-->
 		
-		<section class="slide thoughts" id="conclusion">
+		<section class="slide step4" id="conclusion">
 			<div class="project-step">
 				<h2>
 					The conclusion
@@ -175,7 +180,7 @@
 						– designers from the data team<br>
 						– pattern library team
 					</p>
-					<p>This project just launched and we are currently tracking customer's feedback as well as metrics on usage.</p>
+					<p>The project is set to launch in July 2018. We are building better metrics to track how engaged our customer will be with this page.</p>
 				</div>
 					
 			</div>

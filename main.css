@@ -179,6 +179,10 @@ p {
   display: block;
 }
 
+.project-thumbnail:hover {
+  text-decoration: underline;
+}
+
 .under-construction img,
 .project-thumbnail img {
   display: block;
@@ -384,7 +388,7 @@ blockquote {
   margin-bottom: 1.6em;
 }
 
-.long-list ul {
+.long-list {
   margin: 2em 0 0;
   padding: 0;
 }
@@ -431,12 +435,11 @@ blockquote {
 }
 
 .wide-image {
-  display: block;
+  display: inline-block;
   width: auto;
   max-width: 100%;
   height: auto;
   max-height: 600px;
-  margin: 0 auto;
   box-shadow: 0 1px 6px 0px rgba(0,0,0,.1);
   border: 1px solid #E3E6E9;
 }
@@ -456,6 +459,14 @@ blockquote {
 .wide-image.combined {
   border: 0;
   box-shadow: none;
+}
+
+#di_comparrison {
+  padding-left: 0;
+}
+
+#di_comparrison img {
+  max-height: 800px;
 }
 
 #comic img {
@@ -495,11 +506,17 @@ blockquote {
 
 @media only screen and (max-width : 480px) {
   
-  .nav-wrapper {
+  .nav-wrapper,
+  .project-step,
+  #main_intro,
+  #who_am_i,
+  #non_design_work,
+  #you_want {
     width: 100%;
   }
   
-	.wrapper {
+	.wrapper,
+  .slide {
 		width: 90%;
     margin-left: 5%;
     margin-right: 5%;
@@ -509,12 +526,6 @@ blockquote {
     float: none;
     width: 80%;
     margin: 0 auto;
-  }
-	
-  #who_am_i,
-  #non_design_work,
-  #you_want {
-    width: 100%;
   }
   
   .column {
