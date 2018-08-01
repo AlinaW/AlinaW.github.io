@@ -179,14 +179,21 @@ p {
   display: block;
 }
 
-.project-thumbnail:hover {
-  text-decoration: underline;
-}
-
 .under-construction img,
 .project-thumbnail img {
   display: block;
   margin: 0 auto;
+  border: 1px solid #fff;
+}
+
+.project-thumbnail:hover {
+  text-decoration: underline;
+}
+
+.project-thumbnail:hover img {
+  box-shadow: 0 13px 10px -11px rgba(0,0,0,0.5);
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 4px;
 }
 
 .under-construction img {
