@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="59px" height="44px" viewBox="0 0 59 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Leadership" transform="translate(-578.000000, -204.000000)">
+            <g id="Group-2" transform="translate(578.000000, 204.000000)">
+                <g id="lines" transform="translate(35.500000, 21.846277) rotate(-2.000000) translate(-35.500000, -21.846277) translate(11.000000, 1.846277)">
+                    <rect id="Rectangle" fill="#23242B" transform="translate(23.000000, 18.000000) rotate(53.000000) translate(-23.000000, -18.000000) " x="21" y="-9" width="4" height="54"></rect>
+                    <rect id="Rectangle" fill="#D5B8E2" transform="translate(25.407260, 21.194542) rotate(53.000000) translate(-25.407260, -21.194542) " x="23.4072601" y="-5.80545796" width="4" height="54"></rect>
+                </g>
+                <rect id="Rectangle" fill="#D5B8E2" x="0" y="0" width="20" height="20"></rect>
+                <polygon id="Path-3" stroke="#23242B" stroke-width="3" transform="translate(35.161002, 22.844067) rotate(-38.000000) translate(-35.161002, -22.844067) " points="47.1610016 10.8440667 47.1610016 34.8440667 23.1610016 34.8440667"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

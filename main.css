@@ -103,6 +103,13 @@ nav {
   margin-top: 0;
 }
 
+h3 {
+  font-family: 'Shrikhand', cursive;
+  font-weight: normal;
+  margin: 1em 0 .6em;
+  font-size: 1.4em;
+}
+
 #main_intro {
   font-size: 2.4em;
   line-height: 1.3em;
@@ -182,7 +189,6 @@ p {
 .under-construction img,
 .project-thumbnail img {
   display: block;
-  margin: 0 auto;
   border: 1px solid #fff;
 }
 
@@ -239,11 +245,6 @@ p {
 .column {
   width: 45%;
   float: left;
-}
-
-.column h2 {
-  position: relative;
-  margin-bottom: 2em;
 }
 
 #hire_me h2 {
@@ -312,6 +313,43 @@ p {
   font-weight: bold;
 }
 
+/* On leadership */
+
+.lead-points {
+  padding-bottom: 3em;
+  width: 48%;
+}
+
+.lead-points:first-of-type,
+.lead-points:nth-of-type(3),
+.lead-points:nth-of-type(5),
+.lead-points:nth-of-type(7),
+.lead-points:nth-of-type(9) {
+  padding-right: 4%;
+  clear: left;
+}
+
+.geo-icon {
+  display: block;
+	background-image: url(images/Geo-shapes/geo_icon1.svg);
+	background-size: auto 100%;
+  background-repeat: no-repeat;
+	width: 64px;
+	height: 43px;
+}
+
+.geo-icon.v2 {
+	background-image: url(images/Geo-shapes/geo_icon2.svg);
+}
+
+.geo-icon.v3 {
+	background-image: url(images/Geo-shapes/geo_icon3.svg);
+}
+
+.geo-icon.v4 {
+	background-image: url(images/Geo-shapes/geo_icon4.svg);
+}
+
 /* Projects slide */
 
 .projects {
@@ -323,14 +361,6 @@ p {
 .projects:nth-of-type(5) {
   padding-right: 10%;
 }
-
-
-.projects h2 {
-  text-align: center;
-}
-
-
-
 
 
 
@@ -355,6 +385,7 @@ blockquote {
 .project-page h2 {
   position: relative;
   padding-left: 3.2em;
+  font-family: 'Montserrat', Helvetica, sans-serif;
 }
 
 .project-page h2:before {
