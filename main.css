@@ -228,17 +228,17 @@ p {
   color: #ea7526;
 }
 
-#non_design_work {
+#other_things ul {
   clear: left;
   padding-top: 2em;
   width: 70%;
 }
 
-#non_design_work li {
+#other_things li {
   padding-bottom: .8em;
 }
 
-#non_design_work li:last-child {
+#other_things li:last-child {
   padding-bottom: none;
 }
 
@@ -437,6 +437,10 @@ blockquote {
   list-style: none;
 }
 
+.step-desc {
+  padding-top: 1em;
+}
+
 .step-desc li {
   margin-bottom: .2em;
 }
@@ -469,7 +473,7 @@ blockquote {
 
 .wide-image-container {
   display: inline-block;
-  margin: 1.5em auto;
+  margin: 0 auto 1.5em;
 }
 
 .wide-image {

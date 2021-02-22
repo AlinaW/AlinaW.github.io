@@ -28,9 +28,10 @@
 			<div class="nav-wrapper">
 				<a class="home-link" href="index.html">&#171; Go home</a>
 					<ul>
-						<li><a href="#why_did_we">Why did we do it?</a></li>
-						<li><a href="#di_research">Research</a></li>
+						<li><a href="#research">Research</a></li>
+						<li><a href="#expectations">Expectations</a></li>
 						<li><a href="#design_process">Design process</a></li>
+						<li><a href="#measuring">Measuring</a></li>
 						<li><a href="#conclusion">The conclusion</a></li>
 					</ul>
 			</div>
@@ -43,52 +44,46 @@
 				</h1>
 				
 				<div class="about-project">
-					<p>Description.</p>
+					<p>The majority of Health and Safety is built around accurate and timely reporting. These reports include safety talks, job assessments, hazard identifications, etc. Oftentimes, once the report is made, actions need to be taken on that report. For example, if a worker reported a spillage, someone needs to go clean it up.</p>
+
+<p>SaferMe’s original product offering was focused on making reports quick and easy.  However, we didn’t have an easy way to create actions on those reports. In 2019 we decided to address this problem and created a new feature called “Tasks”. </p>
 				</div>
-				
-				<figure class="wide-image-container" id="di_comparrison">
-					<img class="wide-image" src="images/di/di-old-new.jpg">
-					<figcaption>The old device insight page on the left and the new one on the right</figcaption>
-				</figure>
 				
 			</div>
 		</section><!--End Slide 1-->
 
-		<section class="slide step1" id="why_did_we">
+		<section class="slide step1" id="research">
 			<div class="project-step">
 				<h2>
-					Why design Device Insight in the first place?
+					Research
 				</h2>
 					
 				<div class="step-desc">
-					<blockquote cite="">75% of breaches happen because of compromised user devices.</blockquote>
-					<p>Most breaches happen because of compromised devices or credentials. Most compromised devices are running out of date software such as operating system (os), browser, or plugin. These devices pose a serious security risk for organizations. They are open to security vulnerabilities, and leave open doors to data that needs to be protected.</p>
+					<p>We already had an existing system that allowed users to assign reports to team members. In addition, we had a comment feature. We noticed that many of our users used these two features in combination as a way to assign actions to team members. We reviewed how they were used and formed a list of patterns.</p>
+
+					<p>Then, we followed up with those users to ask how they made decisions around actions and how they monitored the progress around those actions.</p>
+
+					<p>Now, we had a list of needs and asks. At this point, I brought together the engineering manager, the product manager, and myself to create a <a href="https://www.designabetterbusiness.tools/tools/design-criteria-canvas"  target="_blank">design criteria canvas</a>. This is a great tool that allows you to build a clear strategy on how you will attack a feature; what is non-negotiable and what is nice-to-have.</p>
 				</div>
 					
 			</div>
 		</section><!--End why-did-we-->
 		
-		<section class="slide step2" id="di_research">
+		<section class="slide step2" id="expectations">
 			<div class="project-step">
 				<h2>
-					Research (or get your shovel out)
+					Expectations
 				</h2>
 				<div class="step-desc">
-					<ul>
-						<li>
-							<span class="project-step-subtitle">Customer visits</span>
-							<p>I along side with a user researcher visited 5 customers in the Bay area to talk about how they set requirements around devices, their devices' ideal states, and how can Duo help their administrators understand device information and take actions on that information.</p>
-						</li>
-						<li>
-							<span class="project-step-subtitle">Tech support tickets</span>
-							<p>I searched through our technical support database using relevant key words (such as operating system policy, device insight, out of date browser, etc.) and was able to locate dozens of tickets.</p>
-						</li>
-						<li>
-							<span class="project-step-subtitle">Data and analytics</span>
-							<p>Using Duo’s internal logging system (Kibana) and Google analytics, I was able to uncover how often customers interact with the current Device Insight page and if they perform any actions on the page.</p>
-						</li>
-					</ul>
+					<p>This was the first major project for me with the SaferMe team. I wanted to establish transparency and have the best communication from the get-go. To do so, I created a timeline.</p>
+
+						<p>It allowed me to set proper expectations, show the team my process, have early discussions, and learn more about design culture.</p>						
 				</div>
+				
+				<figure class="wide-image-container">
+					<img class="wide-image" src="images/tasks/expectations.png" style="max-width: 700px;">
+					<figcaption>Project timeline</figcaption>
+				</figure>
 					
 			</div>
 		</section><!--End research-->
@@ -100,86 +95,110 @@
 				</h2>
 					
 				<div class="step-desc">
-					<span class="project-step-subtitle">Step 1: Mind Map</span>
-					<p>First, I created a mind map. This was an excellent exercise to broaden the boundaries of thinking, expose hidden connections, and think “outside of the box”.</p>
-					<p class="help-text">Not sure what mind map is? <a href="http://www.mindmapping.com/mind-map.php" target="_blank">Read about it.</a></p>
+					<span class="project-step-subtitle">Step 1: User journey</span>
+					<p>First, we visualized what journey a user will experience. What are potential points of confusion? What are potential points of delight? How journeys can diverge based on actions taken? We had two different personas to cater to: a manager and a worker.</p>
 				</div>
 				
 				<figure class="wide-image-container">
-					<img class="wide-image" src="images/di/mind-map.png" style="max-width: 700px;">
-					<figcaption>Mind map sketch</figcaption>
+					<img class="wide-image" src="images/tasks/journey1.png" style="max-width: 700px;">
+					<figcaption>Journey of a H&S manager</figcaption>
+				</figure>
+				
+				<figure class="wide-image-container">
+					<img class="wide-image" src="images/tasks/journey2.png" style="max-width: 700px;">
+					<figcaption>Journey of a worker</figcaption>
 				</figure>
 				
 				<div class="step-desc">
-					<span class="project-step-subtitle">Step 2: Sketching ideas</span>
-					<p>Pencil and paper are the cheapest and most rapid ways to iterate upon your ideas. I shared the sketches with my engineers and PMs and showed them to customers to get early validations.</p>
+					<span class="project-step-subtitle">Step 2: Flow diagrams</span>
+					<p>Next, we created flow diagrams. These are great as they helped us understand how a user can move through our product. They also helped to discover missing pieces and raise technical questions.</p>
 				</div>
 					
 				<figure class="wide-image-container">
-					<img class="wide-image combined" src="images/di/paper_sketches.png">
-					<figcaption>A few of the hand sketches</figcaption>
+					<img class="wide-image combined" src="images/tasks/creating-task-flow.png"  style="max-width: 700px;">
+					<figcaption>The flow for creating a task</figcaption>
+				</figure>
+				
+				<figure class="wide-image-container">
+					<img class="wide-image combined" src="images/tasks/discovery-flow.png"  style="max-width: 700px;">
+					<figcaption>The flow for discovering a task that is assigned to you</figcaption>
+				</figure>
+				
+				<figure class="wide-image-container">
+					<img class="wide-image combined" src="images/tasks/return-flow.png" style="max-width: 700px;">
+					<figcaption>Returning to the task you have created</figcaption>
 				</figure>
 				
 				<div class="step-desc">
-					<span class="project-step-subtitle">Step 3: Rough mockups and UX interviews</span>
-					<p>Rough mockups is something in between wireframes and hi-fidelity sketches. The goal here is not to decide on visuals, but rather find a solution. I use rough mockups to start conversations with our customers, something that at Duo we call “UX interviews”. These interviews help me define:</p>
-					<p>
-						- Are we on the right track?<br>
-						- Is there data that is missing?<br>
-						- Can our customers take actions on the displayed data?<br>
-						- Is the terminology something that a customer understands and speaks?
-					</p>
-					<p>Feedback from these UX interviews helps me to iterate very quick and converge to find a solution.</p>
+					<span class="project-step-subtitle">Step 3: Identifying permissions</span>
+					<p>We had multiple roles in this project. Each role would get different permissions.</p>
 				</div>
 				
 				<figure class="wide-image-container">
-					<img class="wide-image" src="images/di/wire-many.png">
-				</figure>
-							
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/di/wire-few.png">
-				</figure>
-							
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/di/wire-3.png">
-					<figcaption>A few rough mockups</figcaption>
+					<img class="wide-image" src="images/tasks/permission-matrix.png">
 				</figure>
 				
 				<div class="step-desc">
-					<p>UX interviews are also great opportunities to bring everyone on the same page. I made it mandatory for my engineers to attend at least a few of these calls.</p>
-
-					<span class="project-step-subtitle">Step 4: Hi-fidelity prototypes and usability testing</span>
-					<p>Now it’s time to create hi-resolution mockups that will be used to create clickable prototype via Marvel app. We use these prototypes to do usability testing with customers as well as internal stakeholders.</p>
+					<span class="project-step-subtitle">Step 4: Hi-fidelity prototypes</span>
+					<p>And finally, designing every screen. As tasks always relate to a specific report, we placed the ability to create tasks within them, with the addition of a new tab called “Tasks”.</p>
 				</div>
-							
+				
 				<figure class="wide-image-container">
-					<img class="wide-image" src="images/di/di-access.png">
-					<figcaption>One of the hi-fidelity mockups</figcaption>
+					<img class="wide-image" src="images/tasks/creat-task.png" alt="Creating a task on mobile">
 				</figure>
-							
+				
 				<figure class="wide-image-container">
-					<img class="wide-image" src="images/di/DI OS graph.gif">
-					<figcaption>Interactive prototype built in Marvel App</figcaption>
+					<img class="wide-image" src="images/tasks/viewing-task.png" alt="Viewing a task on mobile">
 				</figure>
+				
+				<figure class="wide-image-container">
+					<img class="wide-image" src="images/tasks/completing-task.png" alt="Completing a task on mobile">
+				</figure>
+				
+				<div class="step-desc">
+					<p>All the screens above had to be replicated for SaferMe's web app as well.</p>
+				</div>
+				
+				<figure class="wide-image-container">
+					<img class="wide-image" src="images/tasks/web-examples.png" alt="Completing a task on mobile" style="max-width: 700px;">
+					<figcaption>A few examples of the web experience</figcaption>
+				</figure>
+				
+				<div class="step-desc">
+					<span class="project-step-subtitle">Step 5: Design spec</span>
+					<p>Lastly, I have produced the design specs to ensure our developers had a clear resource to rely on. I used a combination of Google Slides with Marvel (prototyping tool) to provide all necessary information on behaviours, styles, and information architecture.</p>
+				</div>
 					
 			</div>
 		</section><!--End design-->
 		
-		<section class="slide step4" id="conclusion">
+		<section class="slide step4" id="measuring">
+			<div class="project-step">
+				<h2>
+					Measuring
+				</h2>
+					
+				<div class="step-desc">
+					<p>I wanted to ensure we learn early how our users utilize this new feature and in what ways we can improve it. SaferMe already used Mixpanel for some data, however, it was quite limited. To create accurate requirements on which data points we need to track, I first identified what funnels we want to create to learn about user behaviours. Then, I outlined specific metrics we needed to add to make these funnels possible.</p>
+				</div>
+				
+				<figure class="wide-image-container">
+					<img class="wide-image" src="images/tasks/funnels.png" alt="Outlining funnels" style="max-width: 700px;">
+					<figcaption>Outlining funnels</figcaption>
+				</figure>
+					
+			</div>
+		</section>
+		
+		<section class="slide step5" id="conclusion">
 			<div class="project-step">
 				<h2>
 					The conclusion
 				</h2>
 					
 				<div class="step-desc">
-					<p>Device insight was a massive project that lasted 5 months. However, success of it relied on continues collaboration amongst many people and teams:</p>
-					<p>
-						– engineering team<br>
-						– a product manager<br>
-						– designers from the data team<br>
-						– pattern library team
-					</p>
-					<p>The project is set to launch in July 2018. We are building better metrics to track how engaged our customer will be with this page.</p>
+					<p>The Tasks feature has been living in our product for a year. We are now looking into automating tasks to help our customers create actions without a need to do so manually.
+</p>
 				</div>
 					
 			</div>
