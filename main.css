@@ -214,11 +214,24 @@ p {
   text-decoration: none;
 }
 
-.projects-inner-wrapper span {
+/*.projects-inner-wrapper span {
   display: block;
   text-align: center;
   margin: 1em 0 0;
   font-weight: 600;
+}*/
+
+.projects-inner-wrapper h3 {
+  margin-top: .5em;
+}
+
+.company {
+  display: inline-block;
+  padding: 0 .4em;
+  font-size: .7em;
+  font-weight: normal;
+  background-color: #d4b9e1;
+  font-style: normal;
 }
 
 .under-construction p {
@@ -380,6 +393,10 @@ blockquote {
 
 .project-page .slide {
   height: auto;
+}
+
+.project-page .company {
+  margin-bottom: 1em;
 }
 
 .project-page h2 {
