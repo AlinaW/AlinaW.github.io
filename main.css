@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* montserrat-300 - latin */
 @font-face {
@@ -102,14 +108,16 @@ nav {
 }
 
 .title {
-  font-family: 'Shrikhand', cursive;
-  font-weight: normal;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
   margin-top: 0;
 }
 
 h3 {
-  font-family: 'Shrikhand', cursive;
-  font-weight: normal;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
   margin: 1em 0 .6em;
   font-size: 1.4em;
 }
@@ -309,8 +317,9 @@ p {
 }
 
 .contact h1 {
-  font-family: 'Shrikhand', cursive;
-  font-weight: normal;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
   margin-top: 0;
   font-size: 1.3em;
 }
