@@ -1,198 +1,43 @@
-<!DOCTYPE html>
-
-<html>
-	<head>
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Alina Bochkacheva</title>
-		<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
-		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
-		<link rel="stylesheet" href="main.css" type="text/css">
-		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-		
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-54802940-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'UA-54802940-1');
-		</script>
-	</head>
-	
-	<body class="project-page">
-		<nav class="clearfix">
-			<div class="nav-wrapper">
-				<a class="home-link" href="index.html">&#171; Go home</a>
-					<ul>
-						<li><a href="#why_did_we">Why did we do it?</a></li>
-						<li><a href="#di_research">Research</a></li>
-						<li><a href="#design_process">Design process</a></li>
-						<li><a href="#conclusion">The conclusion</a></li>
-					</ul>
-			</div>
-		</nav>
-		
-		<section class="slide top-slide">
-			<div class="wrapper">
-				<span class="company">Duo Security</span>
-        <h1 class="title" id="main_intro">
-				  Device Insight <span class="year-range">(2018)</span>
-				</h1>
-				
-				<div class="about-project">
-					<p>Device insight was the first data visualization feature released for Duo Security customers in early 2016. The goal of this feature was to help customers (IT administrators) understand the health state of their devices at a glance. We let this feature live and breathe for 1.5 years and then we revisited the design based on the feedback we gathered from customers.</p>
-				</div>
-				
-				<figure class="wide-image-container" id="di_comparrison">
-					<img class="wide-image" src="images/di/di-old-new.jpg">
-					<figcaption>The old device insight page on the left and the new one on the right</figcaption>
-				</figure>
-				
-			</div>
-		</section><!--End Slide 1-->
-
-		<section class="slide step1" id="why_did_we">
-			<div class="project-step">
-				<h2>
-					Why design Device Insight in the first place?
-				</h2>
-					
-				<div class="step-desc">
-					<blockquote cite="">75% of breaches happen because of compromised user devices.</blockquote>
-					<p>Most breaches happen because of compromised devices or credentials. Most compromised devices are running out of date software such as operating system (os), browser, or plugin. These devices pose a serious security risk for organizations. They are open to security vulnerabilities, and leave open doors to data that needs to be protected.</p>
-				</div>
-					
-			</div>
-		</section><!--End why-did-we-->
-		
-		<section class="slide step2" id="di_research">
-			<div class="project-step">
-				<h2>
-					Research (or get your shovel out)
-				</h2>
-				<div class="step-desc">
-					<ul>
-						<li>
-							<span class="project-step-subtitle">Customer visits</span>
-							<p>I along side with a user researcher visited 5 customers in the Bay area to talk about how they set requirements around devices, their devices' ideal states, and how can Duo help their administrators understand device information and take actions on that information.</p>
-						</li>
-						<li>
-							<span class="project-step-subtitle">Tech support tickets</span>
-							<p>I searched through our technical support database using relevant key words (such as operating system policy, device insight, out of date browser, etc.) and was able to locate dozens of tickets.</p>
-						</li>
-						<li>
-							<span class="project-step-subtitle">Data and analytics</span>
-							<p>Using Duo’s internal logging system (Kibana) and Google analytics, I was able to uncover how often customers interact with the current Device Insight page and if they perform any actions on the page.</p>
-						</li>
-					</ul>
-				</div>
-					
-			</div>
-		</section><!--End research-->
-
-		<section class="slide step3" id="design_process">
-			<div class="project-step">
-				<h2>
-					Design process
-				</h2>
-					
-				<div class="step-desc">
-					<span class="project-step-subtitle">Step 1: Mind Map</span>
-					<p>First, I created a mind map. This was an excellent exercise to broaden the boundaries of thinking, expose hidden connections, and think “outside of the box”.</p>
-					<p class="help-text">Not sure what mind map is? <a href="http://www.mindmapping.com/mind-map.php" target="_blank">Read about it.</a></p>
-				</div>
-				
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/di/mind-map.png" style="max-width: 700px;">
-					<figcaption>Mind map sketch</figcaption>
-				</figure>
-				
-				<div class="step-desc">
-					<span class="project-step-subtitle">Step 2: Sketching ideas</span>
-					<p>Pencil and paper are the cheapest and most rapid ways to iterate upon your ideas. I shared the sketches with my engineers and PMs and showed them to customers to get early validations.</p>
-				</div>
-					
-				<figure class="wide-image-container">
-					<img class="wide-image combined" src="images/di/paper_sketches.png">
-					<figcaption>A few of the hand sketches</figcaption>
-				</figure>
-				
-				<div class="step-desc">
-					<span class="project-step-subtitle">Step 3: Rough mockups and UX interviews</span>
-					<p>Rough mockups is something in between wireframes and hi-fidelity sketches. The goal here is not to decide on visuals, but rather find a solution. I use rough mockups to start conversations with our customers, something that at Duo we call “UX interviews”. These interviews help me define:</p>
-					<p>
-						- Are we on the right track?<br>
-						- Is there data that is missing?<br>
-						- Can our customers take actions on the displayed data?<br>
-						- Is the terminology something that a customer understands and speaks?
-					</p>
-					<p>Feedback from these UX interviews helps me to iterate very quick and converge to find a solution.</p>
-				</div>
-				
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/di/wire-many.png">
-				</figure>
-							
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/di/wire-few.png">
-				</figure>
-							
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/di/wire-3.png">
-					<figcaption>A few rough mockups</figcaption>
-				</figure>
-				
-				<div class="step-desc">
-					<p>UX interviews are also great opportunities to bring everyone on the same page. I made it mandatory for my engineers to attend at least a few of these calls.</p>
-
-					<span class="project-step-subtitle">Step 4: Hi-fidelity prototypes and usability testing</span>
-					<p>Now it’s time to create hi-resolution mockups that will be used to create clickable prototype via Marvel app. We use these prototypes to do usability testing with customers as well as internal stakeholders.</p>
-				</div>
-							
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/di/di-access.png">
-					<figcaption>One of the hi-fidelity mockups</figcaption>
-				</figure>
-							
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/di/DI OS graph.gif">
-					<figcaption>Interactive prototype built in Marvel App</figcaption>
-				</figure>
-					
-			</div>
-		</section><!--End design-->
-		
-		<section class="slide step4" id="conclusion">
-			<div class="project-step">
-				<h2>
-					The conclusion
-				</h2>
-					
-				<div class="step-desc">
-					<p>Device insight was a massive project that lasted 5 months. However, success of it relied on continues collaboration amongst many people and teams:</p>
-					<p>
-						– engineering team<br>
-						– a product manager<br>
-						– designers from the data team<br>
-						– pattern library team
-					</p>
-					<p>The project is set to launch in July 2018. We are building better metrics to track how engaged our customer will be with this page.</p>
-				</div>
-					
-			</div>
-		</section><!--End thoughts-->
-		
-		<footer class="contact">
-			<h1>Ready to contact?</h1>
-			<span>Email me:</span>
-			<a href="mailto:alinabochkacheva@gmail.com">alinabochkacheva@gmail.com</a> or connect with me on 
-			<a href="https://www.linkedin.com/pub/alina-bochkacheva/6a/109/92b" target="_blank">LinkedIn</a>
-			<span id="powered">No templates were harmed in creation of this website</span>
-		</footer>
-		
-	</body>
-</html>
+<!DOCTYPE html><html lang="en" data-astro-cid-hkbrpulz><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Device Insight · Alina Bochkacheva</title><meta name="description" content="Device Insight, Duo Security: a case study by Alina Bochkacheva."><link rel="canonical" href="https://www.alina.io/device-insight.html"><meta property="og:title" content="Device Insight · Alina Bochkacheva"><meta property="og:description" content="Device Insight, Duo Security: a case study by Alina Bochkacheva."><meta property="og:url" content="https://www.alina.io/device-insight.html"><meta name="theme-color" content="#191a1f"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"><!-- Analytics: add the cookie-free snippet here once an account exists (GoatCounter, Cloudflare Web Analytics, …). --><link rel="stylesheet" href="/_astro/Base.BF7hllnY.css"><link rel="stylesheet" href="/_astro/_slug_.BgnPWN0L.css"></head><body data-astro-cid-hkbrpulz><a class="skip-link" href="#main" data-astro-cid-hkbrpulz>Skip to content</a><div class="page" data-astro-cid-hkbrpulz><header class="nav" data-astro-cid-wpvy4v7s><a class="monogram" href="/" aria-label="Alina Bochkacheva, home" data-astro-cid-wpvy4v7s>A.B.</a><nav aria-label="Main" data-astro-cid-wpvy4v7s><ul data-astro-cid-wpvy4v7s><li data-astro-cid-wpvy4v7s><a href="/#work" data-astro-cid-wpvy4v7s>All work</a></li><li data-astro-cid-wpvy4v7s><a class="hire" href="mailto:alinabochkacheva@gmail.com" data-astro-cid-wpvy4v7s>Hire me <span aria-hidden="true" data-astro-cid-wpvy4v7s>↗</span></a></li></ul></nav></header><main id="main" tabindex="-1" data-astro-cid-hkbrpulz><article class="case" data-astro-cid-z7xolria><header class="case-head" data-astro-cid-z7xolria><p class="eyebrow" data-astro-cid-z7xolria>Duo Security · 2018</p><h1 class="display case-title" data-astro-cid-z7xolria>Device Insight</h1><div class="double-bar case-bar" aria-hidden="true" data-astro-cid-z7xolria></div></header><div class="case-body" data-astro-cid-z7xolria><nav class="toc" aria-label="On this page" data-astro-cid-z7xolria><p class="toc-label" data-astro-cid-z7xolria>On this page</p><ol data-astro-cid-z7xolria><li data-astro-cid-z7xolria><a href="#why-design-device-insight-in-the-first-place" data-astro-cid-z7xolria>Why design Device Insight in the first place?</a></li><li data-astro-cid-z7xolria><a href="#research-or-get-your-shovel-out" data-astro-cid-z7xolria>Research (or get your shovel out)</a></li><li data-astro-cid-z7xolria><a href="#design-process" data-astro-cid-z7xolria>Design process</a></li><li data-astro-cid-z7xolria><a href="#the-conclusion" data-astro-cid-z7xolria>The conclusion</a></li></ol></nav><div class="prose" data-astro-cid-z7xolria><p>Device insight was the first data visualization feature released for Duo Security customers in early 2016. The goal of this feature was to help customers (IT administrators) understand the health state of their devices at a glance. We let this feature live and breathe for 1.5 years and then we revisited the design based on the feedback we gathered from customers.</p>
+<figure><img alt="Side-by-side comparison. The old Device Insight page uses donut charts and three near-identical line charts for operating systems, browsers and plugins. The new Endpoints Insight page leads with end-of-life and out-of-date breakdowns per platform, then today&#39;s counts and historical trends." loading="lazy" decoding="async" sizes="(min-width: 1632px) 1632px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="1632" height="1730" src="/_astro/di-old-new.BF240Qv7_Z2fI7Tm.webp" srcset="/_astro/di-old-new.BF240Qv7_29Lyxg.webp 640w, /_astro/di-old-new.BF240Qv7_ZW8pYo.webp 750w, /_astro/di-old-new.BF240Qv7_Z2tlEfa.webp 828w, /_astro/di-old-new.BF240Qv7_2elaOX.webp 1080w, /_astro/di-old-new.BF240Qv7_fWAUi.webp 1280w, /_astro/di-old-new.BF240Qv7_Z2fI7Tm.webp 1632w"><figcaption>The old device insight page on the left and the new one on the right</figcaption></figure>
+<h2 id="why-design-device-insight-in-the-first-place">Why design Device Insight in the first place?</h2>
+<blockquote>
+<p>75% of breaches happen because of compromised user devices.</p>
+</blockquote>
+<p>Most breaches happen because of compromised devices or credentials. Most compromised devices are running out of date software such as operating system (os), browser, or plugin. These devices pose a serious security risk for organizations. They are open to security vulnerabilities, and leave open doors to data that needs to be protected.</p>
+<h2 id="research-or-get-your-shovel-out">Research (or get your shovel out)</h2>
+<h3 id="customer-visits">Customer visits</h3>
+<p>I along side with a user researcher visited 5 customers in the Bay area to talk about how they set requirements around devices, their devices’ ideal states, and how can Duo help their administrators understand device information and take actions on that information.</p>
+<h3 id="tech-support-tickets">Tech support tickets</h3>
+<p>I searched through our technical support database using relevant key words (such as operating system policy, device insight, out of date browser, etc.) and was able to locate dozens of tickets.</p>
+<h3 id="data-and-analytics">Data and analytics</h3>
+<p>Using Duo’s internal logging system (Kibana) and Google analytics, I was able to uncover how often customers interact with the current Device Insight page and if they perform any actions on the page.</p>
+<h2 id="design-process">Design process</h2>
+<h3 id="step-1-mind-map">Step 1: Mind Map</h3>
+<p>First, I created a mind map. This was an excellent exercise to broaden the boundaries of thinking, expose hidden connections, and think “outside of the box”.</p>
+<p>Not sure what mind map is? <a href="http://www.mindmapping.com/mind-map.php">Read about it.</a></p>
+<figure><img alt="Hand-drawn mind map centred on improved Device Insight, branching into browsers, operating systems, plugins, laptops versus mobile, managed versus unmanaged devices, and what the admin persona, Gary, will do with the data." loading="lazy" decoding="async" sizes="(min-width: 1058px) 1058px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="1058" height="698" src="/_astro/mind-map.DYEWcnM-_Z1CguED.webp" srcset="/_astro/mind-map.DYEWcnM-_EEnkg.webp 640w, /_astro/mind-map.DYEWcnM-_Z1ifwd6.webp 750w, /_astro/mind-map.DYEWcnM-_2glFcY.webp 828w, /_astro/mind-map.DYEWcnM-_Z1CguED.webp 1058w"><figcaption>Mind map sketch</figcaption></figure>
+<h3 id="step-2-sketching-ideas">Step 2: Sketching ideas</h3>
+<p>Pencil and paper are the cheapest and most rapid ways to iterate upon your ideas. I shared the sketches with my engineers and PMs and showed them to customers to get early validations.</p>
+<figure><img alt="Four pencil sketches of dashboard layouts with donut charts, device totals, recent software releases and line charts of out-of-date devices over time, some coloured in." loading="lazy" decoding="async" sizes="(min-width: 1492px) 1492px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="1492" height="936" src="/_astro/paper_sketches.Du7zOrTV_1wcQ9h.webp" srcset="/_astro/paper_sketches.Du7zOrTV_Zi8S5g.webp 640w, /_astro/paper_sketches.Du7zOrTV_2t7pii.webp 750w, /_astro/paper_sketches.Du7zOrTV_1ideMS.webp 828w, /_astro/paper_sketches.Du7zOrTV_oKU6B.webp 1080w, /_astro/paper_sketches.Du7zOrTV_qmWre.webp 1280w, /_astro/paper_sketches.Du7zOrTV_1wcQ9h.webp 1492w"><figcaption>A few of the hand sketches</figcaption></figure>
+<h3 id="step-3-rough-mockups-and-ux-interviews">Step 3: Rough mockups and UX interviews</h3>
+<p>Rough mockups is something in between wireframes and hi-fidelity sketches. The goal here is not to decide on visuals, but rather find a solution. I use rough mockups to start conversations with our customers, something that at Duo we call “UX interviews”. These interviews help me define:</p>
+<ul>
+<li>Are we on the right track? - Is there data that is missing? - Can our customers take actions on the displayed data? - Is the terminology something that a customer understands and speaks?</li>
+</ul>
+<p>Feedback from these UX interviews helps me to iterate very quick and converge to find a solution.</p>
+<figure><img alt="A grid of more than 25 grey wireframe versions of the top of the Device Insight page, labelled V1 to V23." loading="lazy" decoding="async" sizes="(min-width: 1848px) 1848px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="1848" height="1032" src="/_astro/wire-many.Bfmy-Gr0_Z2hYzVV.webp" srcset="/_astro/wire-many.Bfmy-Gr0_ZBlgRJ.webp 640w, /_astro/wire-many.Bfmy-Gr0_Z1V5RHU.webp 750w, /_astro/wire-many.Bfmy-Gr0_139uJx.webp 828w, /_astro/wire-many.Bfmy-Gr0_Z1SJozC.webp 1080w, /_astro/wire-many.Bfmy-Gr0_ZFQtuJ.webp 1280w, /_astro/wire-many.Bfmy-Gr0_Z1YVRa6.webp 1668w, /_astro/wire-many.Bfmy-Gr0_Z2hYzVV.webp 1848w"></figure>
+<figure><img alt="Nine of the top-of-page wireframes shown larger, comparing different arrangements of device totals, donut charts and trusted endpoint counts." loading="lazy" decoding="async" sizes="(min-width: 1818px) 1818px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="1818" height="1212" src="/_astro/wire-few.DWSEDPOF_Z2ho5DI.webp" srcset="/_astro/wire-few.DWSEDPOF_Z1FEDmp.webp 640w, /_astro/wire-few.DWSEDPOF_ZuNM4N.webp 750w, /_astro/wire-few.DWSEDPOF_Z1U5SgH.webp 828w, /_astro/wire-few.DWSEDPOF_1tcg7u.webp 1080w, /_astro/wire-few.DWSEDPOF_MsFCl.webp 1280w, /_astro/wire-few.DWSEDPOF_ZEx7Wv.webp 1668w, /_astro/wire-few.DWSEDPOF_Z2ho5DI.webp 1818w"></figure>
+<figure><img alt="Three wireframe versions of the lower half of the page, each pairing a line chart with today&#39;s count of devices with out-of-date operating systems and browsers." loading="lazy" decoding="async" sizes="(min-width: 1824px) 1824px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="1824" height="534" src="/_astro/wire-3.q0XoH_1X_Z1LMYc2.webp" srcset="/_astro/wire-3.q0XoH_1X_1PP7Bm.webp 640w, /_astro/wire-3.q0XoH_1X_2uSP6S.webp 750w, /_astro/wire-3.q0XoH_1X_1iT69Q.webp 828w, /_astro/wire-3.q0XoH_1X_Z16RLID.webp 1080w, /_astro/wire-3.q0XoH_1X_Z1n8tR9.webp 1280w, /_astro/wire-3.q0XoH_1X_ZKyHfI.webp 1668w, /_astro/wire-3.q0XoH_1X_Z1LMYc2.webp 1824w"><figcaption>A few rough mockups</figcaption></figure>
+<p>UX interviews are also great opportunities to bring everyone on the same page. I made it mandatory for my engineers to attend at least a few of these calls.</p>
+<h3 id="step-4-hi-fidelity-prototypes-and-usability-testing">Step 4: Hi-fidelity prototypes and usability testing</h3>
+<p>Now it’s time to create hi-resolution mockups that will be used to create clickable prototype via Marvel app. We use these prototypes to do usability testing with customers as well as internal stakeholders.</p>
+<figure><img alt="High-fidelity Endpoints Insight page in the Duo admin panel. Coloured bars show the share of end-of-life, out-of-date and up-to-date macOS, Windows and mobile devices, followed by today&#39;s 620 endpoints with out-of-date operating systems and a 30-day line chart." loading="lazy" decoding="async" sizes="(min-width: 1200px) 1200px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="1200" height="1074" src="/_astro/di-access.DowWVN2U_ZOO19L.webp" srcset="/_astro/di-access.DowWVN2U_1cFNGQ.webp 640w, /_astro/di-access.DowWVN2U_PpmIQ.webp 750w, /_astro/di-access.DowWVN2U_ZzQyct.webp 828w, /_astro/di-access.DowWVN2U_Z1Iw2u.webp 1080w, /_astro/di-access.DowWVN2U_ZOO19L.webp 1200w"><figcaption>One of the hi-fidelity mockups</figcaption></figure>
+<figure>
+  <video src="/media/device-insight/DI-OS-graph.mp4" autoplay loop muted playsinline controls preload="metadata" aria-label="Prototype interactions on Endpoints Insight: hovering a bar shows which macOS versions count as out of date, and opening the help link lists which versions of each operating system are considered up to date."></video>
+  <figcaption>Interactive prototype built in Marvel App</figcaption>
+</figure>
+<h2 id="the-conclusion">The conclusion</h2>
+<p>Device insight was a massive project that lasted 5 months. However, success of it relied on continues collaboration amongst many people and teams:</p>
+<p>– engineering team – a product manager – designers from the data team – pattern library team</p>
+<p>The project is set to launch in July 2018. We are building better metrics to track how engaged our customer will be with this page.</p></div><nav class="next" aria-label="Next case study" data-astro-cid-z7xolria><a href="/mobile-endpoints.html" class="next-link" data-astro-cid-z7xolria><span class="next-label" data-astro-cid-z7xolria>Next</span><span class="display next-title" data-astro-cid-z7xolria>Mobile Trusted Endpoints <span aria-hidden="true" data-astro-cid-z7xolria>→</span></span></a></nav></div></article></main><footer class="footer" data-astro-cid-jo6i4kqk><a class="cta" href="mailto:alinabochkacheva@gmail.com" data-astro-cid-jo6i4kqk>Let’s talk.</a><div class="details" data-astro-cid-jo6i4kqk><a href="mailto:alinabochkacheva@gmail.com" class="email" data-astro-cid-jo6i4kqk>alinabochkacheva@gmail.com</a><br data-astro-cid-jo6i4kqk><a href="https://www.linkedin.com/pub/alina-bochkacheva/6a/109/92b" class="linkedin" data-astro-cid-jo6i4kqk>LinkedIn</a></div></footer></div><script type="module">window.matchMedia(`(prefers-reduced-motion: reduce)`).matches&&document.querySelectorAll(`video[autoplay]`).forEach(e=>{e.removeAttribute(`autoplay`),e.pause()});</script></body></html>

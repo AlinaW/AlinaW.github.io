@@ -1,217 +1,37 @@
-<!DOCTYPE html>
-
-<html>
-	<head>
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Alina Bochkacheva</title>
-		<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
-		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
-		<link rel="stylesheet" href="main.css" type="text/css">
-		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-		
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-54802940-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'UA-54802940-1');
-		</script>
-	</head>
-	
-	<body class="project-page">
-		<nav class="clearfix">
-			<div class="nav-wrapper">
-				<a class="home-link" href="index.html">&#171; Go home</a>
-					<ul>
-						<li><a href="#research">Research</a></li>
-						<li><a href="#expectations">Expectations</a></li>
-						<li><a href="#design_process">Design process</a></li>
-						<li><a href="#measuring">Measuring</a></li>
-						<li><a href="#conclusion">The conclusion</a></li>
-					</ul>
-			</div>
-		</nav>
-		
-		<section class="slide top-slide">
-			<div class="wrapper">
-				<span class="company">SaferMe</span>
-        <h1 class="title" id="main_intro">
-				  Tasks <span class="year-range">(2019)</span>
-				</h1>
-				
-				<div class="about-project">
-					<p>The majority of Health and Safety is built around accurate and timely reporting. These reports include safety talks, job assessments, hazard identifications, etc. Oftentimes, once the report is made, actions need to be taken on that report. For example, if a worker reported a spillage, someone needs to go clean it up.</p>
-
-<p>SaferMe’s original product offering was focused on making reports quick and easy.  However, we didn’t have an easy way to create actions on those reports. In 2019 we decided to address this problem and created a new feature called “Tasks”. </p>
-				</div>
-				
-			</div>
-		</section><!--End Slide 1-->
-
-		<section class="slide step1" id="research">
-			<div class="project-step">
-				<h2>
-					Research
-				</h2>
-					
-				<div class="step-desc">
-					<p>We already had an existing system that allowed users to assign reports to team members. In addition, we had a comment feature. We noticed that many of our users used these two features in combination as a way to assign actions to team members. We reviewed how they were used and formed a list of patterns.</p>
-
-					<p>Then, we followed up with those users to ask how they made decisions around actions and how they monitored the progress around those actions.</p>
-
-					<p>Now, we had a list of needs and asks. At this point, I brought together the engineering manager, the product manager, and myself to create a <a href="https://www.designabetterbusiness.tools/tools/design-criteria-canvas"  target="_blank">design criteria canvas</a>. This is a great tool that allows you to build a clear strategy on how you will attack a feature; what is non-negotiable and what is nice-to-have.</p>
-				</div>
-					
-			</div>
-		</section><!--End research-->
-		
-		<section class="slide step2" id="expectations">
-			<div class="project-step">
-				<h2>
-					Expectations
-				</h2>
-				<div class="step-desc">
-					<p>This was the first major project for me with the SaferMe team. I wanted to establish transparency and have the best communication from the get-go. To do so, I created a timeline.</p>
-
-						<p>It allowed me to set proper expectations, show the team my process, have early discussions, and learn more about design culture.</p>						
-				</div>
-				
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/tasks/expectations.png" style="max-width: 700px;">
-					<figcaption>Project timeline</figcaption>
-				</figure>
-					
-			</div>
-		</section><!--End research-->
-
-		<section class="slide step3" id="design_process">
-			<div class="project-step">
-				<h2>
-					Design process
-				</h2>
-					
-				<div class="step-desc">
-					<span class="project-step-subtitle">Step 1: User journey</span>
-					<p>First, we visualized what journey a user will experience. What are potential points of confusion? What are potential points of delight? How journeys can diverge based on actions taken? We had two different personas to cater to: a manager and a worker.</p>
-				</div>
-				
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/tasks/Journey1.png" style="max-width: 700px;">
-					<figcaption>Journey of a H&S manager</figcaption>
-				</figure>
-				
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/tasks/Journey2.png" style="max-width: 700px;">
-					<figcaption>Journey of a worker</figcaption>
-				</figure>
-				
-				<div class="step-desc">
-					<span class="project-step-subtitle">Step 2: Flow diagrams</span>
-					<p>Next, we created flow diagrams. These are great as they helped us understand how a user can move through our product. They also helped to discover missing pieces and raise technical questions.</p>
-				</div>
-					
-				<figure class="wide-image-container">
-					<img class="wide-image combined" src="images/tasks/creating-task-flow.png"  style="max-width: 700px;">
-					<figcaption>The flow for creating a task</figcaption>
-				</figure>
-				
-				<figure class="wide-image-container">
-					<img class="wide-image combined" src="images/tasks/discovery-flow.png"  style="max-width: 700px;">
-					<figcaption>The flow for discovering a task that is assigned to you</figcaption>
-				</figure>
-				
-				<figure class="wide-image-container">
-					<img class="wide-image combined" src="images/tasks/return-flow.png" style="max-width: 700px;">
-					<figcaption>Returning to the task you have created</figcaption>
-				</figure>
-				
-				<div class="step-desc">
-					<span class="project-step-subtitle">Step 3: Identifying permissions</span>
-					<p>We had multiple roles in this project. Each role would get different permissions.</p>
-				</div>
-				
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/tasks/permission-matrix.png">
-				</figure>
-				
-				<div class="step-desc">
-					<span class="project-step-subtitle">Step 4: Hi-fidelity prototypes</span>
-					<p>And finally, designing every screen. As tasks always relate to a specific report, we placed the ability to create tasks within them, with the addition of a new tab called “Tasks”.</p>
-				</div>
-				
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/tasks/creat-task.png" alt="Creating a task on mobile">
-				</figure>
-				
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/tasks/viewing-task.png" alt="Viewing a task on mobile">
-				</figure>
-				
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/tasks/completing-task.png" alt="Completing a task on mobile">
-				</figure>
-				
-				<div class="step-desc">
-					<p>All the screens above had to be replicated for SaferMe's web app as well.</p>
-				</div>
-				
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/tasks/web-examples.png" alt="Completing a task on mobile" style="max-width: 700px;">
-					<figcaption>A few examples of the web experience</figcaption>
-				</figure>
-				
-				<div class="step-desc">
-					<span class="project-step-subtitle">Step 5: Design spec</span>
-					<p>Lastly, I have produced the design specs to ensure our developers had a clear resource to rely on. I used a combination of Google Slides with Marvel (prototyping tool) to provide all necessary information on behaviours, styles, and information architecture.</p>
-				</div>
-					
-			</div>
-		</section><!--End design-->
-		
-		<section class="slide step4" id="measuring">
-			<div class="project-step">
-				<h2>
-					Measuring
-				</h2>
-					
-				<div class="step-desc">
-					<p>I wanted to ensure we learn early how our users utilize this new feature and in what ways we can improve it. SaferMe already used Mixpanel for some data, however, it was quite limited. To create accurate requirements on which data points we need to track, I first identified what funnels we want to create to learn about user behaviours. Then, I outlined specific metrics we needed to add to make these funnels possible.</p>
-				</div>
-				
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/tasks/funnels.png" alt="Outlining funnels" style="max-width: 700px;">
-					<figcaption>Outlining funnels</figcaption>
-				</figure>
-					
-			</div>
-		</section>
-		
-		<section class="slide step5" id="conclusion">
-			<div class="project-step">
-				<h2>
-					The conclusion
-				</h2>
-					
-				<div class="step-desc">
-					<p>The Tasks feature has been living in our product for a year. We are now looking into automating tasks to help our customers create actions without a need to do so manually.
-</p>
-				</div>
-					
-			</div>
-		</section><!--End conclusion-->
-		
-		<footer class="contact">
-			<h1>Ready to contact?</h1>
-			<span>Email me:</span>
-			<a href="mailto:alinabochkacheva@gmail.com">alinabochkacheva@gmail.com</a> or connect with me on 
-			<a href="https://www.linkedin.com/pub/alina-bochkacheva/6a/109/92b" target="_blank">LinkedIn</a>
-			<span id="powered">No templates were harmed in creation of this website</span>
-		</footer>
-		
-	</body>
-</html>
+<!DOCTYPE html><html lang="en" data-astro-cid-hkbrpulz><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Tasks · Alina Bochkacheva</title><meta name="description" content="Tasks, SaferMe: a case study by Alina Bochkacheva."><link rel="canonical" href="https://www.alina.io/tasks.html"><meta property="og:title" content="Tasks · Alina Bochkacheva"><meta property="og:description" content="Tasks, SaferMe: a case study by Alina Bochkacheva."><meta property="og:url" content="https://www.alina.io/tasks.html"><meta name="theme-color" content="#191a1f"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"><!-- Analytics: add the cookie-free snippet here once an account exists (GoatCounter, Cloudflare Web Analytics, …). --><link rel="stylesheet" href="/_astro/Base.BF7hllnY.css"><link rel="stylesheet" href="/_astro/_slug_.BgnPWN0L.css"></head><body data-astro-cid-hkbrpulz><a class="skip-link" href="#main" data-astro-cid-hkbrpulz>Skip to content</a><div class="page" data-astro-cid-hkbrpulz><header class="nav" data-astro-cid-wpvy4v7s><a class="monogram" href="/" aria-label="Alina Bochkacheva, home" data-astro-cid-wpvy4v7s>A.B.</a><nav aria-label="Main" data-astro-cid-wpvy4v7s><ul data-astro-cid-wpvy4v7s><li data-astro-cid-wpvy4v7s><a href="/#work" data-astro-cid-wpvy4v7s>All work</a></li><li data-astro-cid-wpvy4v7s><a class="hire" href="mailto:alinabochkacheva@gmail.com" data-astro-cid-wpvy4v7s>Hire me <span aria-hidden="true" data-astro-cid-wpvy4v7s>↗</span></a></li></ul></nav></header><main id="main" tabindex="-1" data-astro-cid-hkbrpulz><article class="case" data-astro-cid-z7xolria><header class="case-head" data-astro-cid-z7xolria><p class="eyebrow" data-astro-cid-z7xolria>SaferMe · 2019</p><h1 class="display case-title" data-astro-cid-z7xolria>Tasks</h1><div class="double-bar case-bar" aria-hidden="true" data-astro-cid-z7xolria></div></header><div class="case-body" data-astro-cid-z7xolria><nav class="toc" aria-label="On this page" data-astro-cid-z7xolria><p class="toc-label" data-astro-cid-z7xolria>On this page</p><ol data-astro-cid-z7xolria><li data-astro-cid-z7xolria><a href="#research" data-astro-cid-z7xolria>Research</a></li><li data-astro-cid-z7xolria><a href="#expectations" data-astro-cid-z7xolria>Expectations</a></li><li data-astro-cid-z7xolria><a href="#design-process" data-astro-cid-z7xolria>Design process</a></li><li data-astro-cid-z7xolria><a href="#measuring" data-astro-cid-z7xolria>Measuring</a></li><li data-astro-cid-z7xolria><a href="#the-conclusion" data-astro-cid-z7xolria>The conclusion</a></li></ol></nav><div class="prose" data-astro-cid-z7xolria><p>The majority of Health and Safety is built around accurate and timely reporting. These reports include safety talks, job assessments, hazard identifications, etc. Oftentimes, once the report is made, actions need to be taken on that report. For example, if a worker reported a spillage, someone needs to go clean it up.</p>
+<p>SaferMe’s original product offering was focused on making reports quick and easy. However, we didn’t have an easy way to create actions on those reports. In 2019 we decided to address this problem and created a new feature called “Tasks”.</p>
+<h2 id="research">Research</h2>
+<p>We already had an existing system that allowed users to assign reports to team members. In addition, we had a comment feature. We noticed that many of our users used these two features in combination as a way to assign actions to team members. We reviewed how they were used and formed a list of patterns.</p>
+<p>Then, we followed up with those users to ask how they made decisions around actions and how they monitored the progress around those actions.</p>
+<p>Now, we had a list of needs and asks. At this point, I brought together the engineering manager, the product manager, and myself to create a <a href="https://www.designabetterbusiness.tools/tools/design-criteria-canvas">design criteria canvas</a>. This is a great tool that allows you to build a clear strategy on how you will attack a feature; what is non-negotiable and what is nice-to-have.</p>
+<h2 id="expectations">Expectations</h2>
+<p>This was the first major project for me with the SaferMe team. I wanted to establish transparency and have the best communication from the get-go. To do so, I created a timeline.</p>
+<p>It allowed me to set proper expectations, show the team my process, have early discussions, and learn more about design culture.</p>
+<figure><img alt="Five-week project plan from 18 March to 19 April: flows and rough sketches, hi-fi mockups and prototypes, usability testing with five customers, then refinement. Each phase lists its meetings and deliverables, such as Marvel prototypes and a design spec." loading="lazy" decoding="async" sizes="(min-width: 1649px) 1649px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="1649" height="784" src="/_astro/expectations.DfKjpG5-_Z11v3YI.webp" srcset="/_astro/expectations.DfKjpG5-_Z3bKuM.webp 640w, /_astro/expectations.DfKjpG5-_ZTtXY5.webp 750w, /_astro/expectations.DfKjpG5-_2pNk3k.webp 828w, /_astro/expectations.DfKjpG5-_2Ugd2.webp 1080w, /_astro/expectations.DfKjpG5-_1ou6OQ.webp 1280w, /_astro/expectations.DfKjpG5-_Z11v3YI.webp 1649w"><figcaption>Project timeline</figcaption></figure>
+<h2 id="design-process">Design process</h2>
+<h3 id="step-1-user-journey">Step 1: User journey</h3>
+<p>First, we visualized what journey a user will experience. What are potential points of confusion? What are potential points of delight? How journeys can diverge based on actions taken? We had two different personas to cater to: a manager and a worker.</p>
+<figure><img alt="Journey map of a health and safety manager, from getting a report to creating actions and waiting for them to be done. Thoughts and emotions are marked along the way, from wondering whether they created the right action to relief when the last one is resolved." loading="lazy" decoding="async" sizes="(min-width: 1799px) 1799px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="1799" height="744" src="/_astro/Journey1.DhosA3Aj_Z1W8By7.webp" srcset="/_astro/Journey1.DhosA3Aj_Z2jhQdE.webp 640w, /_astro/Journey1.DhosA3Aj_2f4dHn.webp 750w, /_astro/Journey1.DhosA3Aj_Z1ecumo.webp 828w, /_astro/Journey1.DhosA3Aj_1dEJAV.webp 1080w, /_astro/Journey1.DhosA3Aj_18PWd4.webp 1280w, /_astro/Journey1.DhosA3Aj_Z1RFT4A.webp 1668w, /_astro/Journey1.DhosA3Aj_Z1W8By7.webp 1799w"><figcaption>Journey of a H&#x26;S manager</figcaption></figure>
+<figure><img alt="Journey map of a worker assigned an action. They review it, then either decline it or do it and mark it as done. Being assigned feels like extra work; closing the task feels good." loading="lazy" decoding="async" sizes="(min-width: 1799px) 1799px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="1799" height="1146" src="/_astro/Journey2.D_5RKaks_1eLMCV.webp" srcset="/_astro/Journey2.D_5RKaks_Z1xubRB.webp 640w, /_astro/Journey2.D_5RKaks_2l6xxp.webp 750w, /_astro/Journey2.D_5RKaks_Z31TWq.webp 828w, /_astro/Journey2.D_5RKaks_pjgTn.webp 1080w, /_astro/Journey2.D_5RKaks_Z26BKgP.webp 1280w, /_astro/Journey2.D_5RKaks_Z2rMypw.webp 1668w, /_astro/Journey2.D_5RKaks_1eLMCV.webp 1799w"><figcaption>Journey of a worker</figcaption></figure>
+<h3 id="step-2-flow-diagrams">Step 2: Flow diagrams</h3>
+<p>Next, we created flow diagrams. These are great as they helped us understand how a user can move through our product. They also helped to discover missing pieces and raise technical questions.</p>
+<figure><img alt="Flow diagram for a task creator: from a report notification or the feed, open the report, start a task, add a name and description, assign someone and save. Open questions underneath cover naming, assigning and what happens after saving." loading="lazy" decoding="async" sizes="(min-width: 1831px) 1831px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="1831" height="721" src="/_astro/creating-task-flow.CLKbY_sY_Z1LMOAB.webp" srcset="/_astro/creating-task-flow.CLKbY_sY_ZgY8GD.webp 640w, /_astro/creating-task-flow.CLKbY_sY_Z1EFeHd.webp 750w, /_astro/creating-task-flow.CLKbY_sY_19MphP.webp 828w, /_astro/creating-task-flow.CLKbY_sY_ZaX3FP.webp 1080w, /_astro/creating-task-flow.CLKbY_sY_v8NOC.webp 1280w, /_astro/creating-task-flow.CLKbY_sY_Z2gHu6S.webp 1668w, /_astro/creating-task-flow.CLKbY_sY_Z1LMOAB.webp 1831w"><figcaption>The flow for creating a task</figcaption></figure>
+<figure><img alt="Flow diagram of an assignee finding a task through the feed, a push notification, an email or a text message, then reading it before either doing the task or contacting its creator. Open questions cover deep links and declined tasks." loading="lazy" decoding="async" sizes="(min-width: 2649px) 2649px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="2649" height="1419" src="/_astro/discovery-flow.Dde6xSxP_Z1RHTCO.webp" srcset="/_astro/discovery-flow.Dde6xSxP_1Bapfw.webp 640w, /_astro/discovery-flow.Dde6xSxP_ZsyoIW.webp 750w, /_astro/discovery-flow.Dde6xSxP_1NC09B.webp 828w, /_astro/discovery-flow.Dde6xSxP_Z1J4Px0.webp 1080w, /_astro/discovery-flow.Dde6xSxP_Z1GUEgq.webp 1280w, /_astro/discovery-flow.Dde6xSxP_ZFrq6W.webp 1668w, /_astro/discovery-flow.Dde6xSxP_LjmSd.webp 2048w, /_astro/discovery-flow.Dde6xSxP_14kA64.webp 2560w, /_astro/discovery-flow.Dde6xSxP_Z1RHTCO.webp 2649w"><figcaption>The flow for discovering a task that is assigned to you</figcaption></figure>
+<figure><img alt="Flow diagram of how admins, assignees and task creators get back to a task through the app, the feed, a report or an email, and which actions each role can take once it is open, such as editing, deleting or marking it complete." loading="lazy" decoding="async" sizes="(min-width: 2818px) 2818px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="2818" height="1350" src="/_astro/return-flow.D1fQsvm4_xs1PJ.webp" srcset="/_astro/return-flow.D1fQsvm4_Z1NzuKF.webp 640w, /_astro/return-flow.D1fQsvm4_ROE1R.webp 750w, /_astro/return-flow.D1fQsvm4_EpzMr.webp 828w, /_astro/return-flow.D1fQsvm4_Z1UNVdq.webp 1080w, /_astro/return-flow.D1fQsvm4_qmhbh.webp 1280w, /_astro/return-flow.D1fQsvm4_1YuIyV.webp 1668w, /_astro/return-flow.D1fQsvm4_6sswC.webp 2048w, /_astro/return-flow.D1fQsvm4_1nYuqi.webp 2560w, /_astro/return-flow.D1fQsvm4_xs1PJ.webp 2818w"><figcaption>Returning to the task you have created</figcaption></figure>
+<h3 id="step-3-identifying-permissions">Step 3: Identifying permissions</h3>
+<p>We had multiple roles in this project. Each role would get different permissions.</p>
+<figure><img alt="Permission matrix of task actions by role. Everyone can view a task. Task creators and admins can edit and delete it. Assignees and admins can mark it complete. Creators, assignees and admins can mark it incomplete. Anyone else can only view it. A user with several roles gets the highest permission of them." loading="lazy" decoding="async" sizes="(min-width: 3016px) 3016px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="3016" height="1240" src="/_astro/permission-matrix.CAHbEk_y_Z29MeKN.webp" srcset="/_astro/permission-matrix.CAHbEk_y_ZFVRMB.webp 640w, /_astro/permission-matrix.CAHbEk_y_Z2dlF0z.webp 750w, /_astro/permission-matrix.CAHbEk_y_Z1At189.webp 828w, /_astro/permission-matrix.CAHbEk_y_ZdttAB.webp 1080w, /_astro/permission-matrix.CAHbEk_y_SVlix.webp 1280w, /_astro/permission-matrix.CAHbEk_y_Z1f97ya.webp 1668w, /_astro/permission-matrix.CAHbEk_y_Z1S7cuD.webp 2048w, /_astro/permission-matrix.CAHbEk_y_Z2qjOhb.webp 2560w, /_astro/permission-matrix.CAHbEk_y_Z29MeKN.webp 3016w"></figure>
+<h3 id="step-4-hi-fidelity-prototypes">Step 4: Hi-fidelity prototypes</h3>
+<p>And finally, designing every screen. As tasks always relate to a specific report, we placed the ability to create tasks within them, with the addition of a new tab called “Tasks”.</p>
+<figure><img alt="Creating a task on mobile" loading="lazy" decoding="async" sizes="(min-width: 2678px) 2678px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="2678" height="1116" src="/_astro/creat-task.BodAho6W_C2MmW.webp" srcset="/_astro/creat-task.BodAho6W_ZQ8XIq.webp 640w, /_astro/creat-task.BodAho6W_Z2r0SjN.webp 750w, /_astro/creat-task.BodAho6W_Z13fF2y.webp 828w, /_astro/creat-task.BodAho6W_Z14z99q.webp 1080w, /_astro/creat-task.BodAho6W_eyNSt.webp 1280w, /_astro/creat-task.BodAho6W_JSKuK.webp 1668w, /_astro/creat-task.BodAho6W_Z28mm5B.webp 2048w, /_astro/creat-task.BodAho6W_1uVYSj.webp 2560w, /_astro/creat-task.BodAho6W_C2MmW.webp 2678w"></figure>
+<figure><img alt="Viewing a task on mobile" loading="lazy" decoding="async" sizes="(min-width: 1912px) 1912px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="1912" height="694" src="/_astro/viewing-task.CVWTRRet_7YCky.webp" srcset="/_astro/viewing-task.CVWTRRet_Z1EhNYT.webp 640w, /_astro/viewing-task.CVWTRRet_1j0B4J.webp 750w, /_astro/viewing-task.CVWTRRet_1SmjHE.webp 828w, /_astro/viewing-task.CVWTRRet_1jcIh3.webp 1080w, /_astro/viewing-task.CVWTRRet_1esSrR.webp 1280w, /_astro/viewing-task.CVWTRRet_IMGnm.webp 1668w, /_astro/viewing-task.CVWTRRet_7YCky.webp 1912w"></figure>
+<figure><img alt="Completing a task on mobile" loading="lazy" decoding="async" sizes="(min-width: 1926px) 1926px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="1926" height="1090" src="/_astro/completing-task.CThEMmvW_ZvXY9H.webp" srcset="/_astro/completing-task.CThEMmvW_ZuBBNW.webp 640w, /_astro/completing-task.CThEMmvW_JUpfB.webp 750w, /_astro/completing-task.CThEMmvW_Z1qppiU.webp 828w, /_astro/completing-task.CThEMmvW_Z2dsY08.webp 1080w, /_astro/completing-task.CThEMmvW_Z1DW05b.webp 1280w, /_astro/completing-task.CThEMmvW_Z24TmMJ.webp 1668w, /_astro/completing-task.CThEMmvW_ZvXY9H.webp 1926w"></figure>
+<p>All the screens above had to be replicated for SaferMe’s web app as well.</p>
+<figure><img alt="Completing a task on mobile" loading="lazy" decoding="async" sizes="(min-width: 1558px) 1558px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="1558" height="892" src="/_astro/web-examples.CFh3qy0X_2mW8zs.webp" srcset="/_astro/web-examples.CFh3qy0X_15lxFf.webp 640w, /_astro/web-examples.CFh3qy0X_Z26c5ns.webp 750w, /_astro/web-examples.CFh3qy0X_Z5wVXB.webp 828w, /_astro/web-examples.CFh3qy0X_Z1L7XWz.webp 1080w, /_astro/web-examples.CFh3qy0X_8dDSv.webp 1280w, /_astro/web-examples.CFh3qy0X_2mW8zs.webp 1558w"><figcaption>A few examples of the web experience</figcaption></figure>
+<h3 id="step-5-design-spec">Step 5: Design spec</h3>
+<p>Lastly, I have produced the design specs to ensure our developers had a clear resource to rely on. I used a combination of Google Slides with Marvel (prototyping tool) to provide all necessary information on behaviours, styles, and information architecture.</p>
+<h2 id="measuring">Measuring</h2>
+<p>I wanted to ensure we learn early how our users utilize this new feature and in what ways we can improve it. SaferMe already used Mixpanel for some data, however, it was quite limited. To create accurate requirements on which data points we need to track, I first identified what funnels we want to create to learn about user behaviours. Then, I outlined specific metrics we needed to add to make these funnels possible.</p>
+<figure><img alt="Outlining funnels" loading="lazy" decoding="async" sizes="(min-width: 1162px) 1162px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="1162" height="1326" src="/_astro/funnels.Brt2otMF_1e0PBb.webp" srcset="/_astro/funnels.Brt2otMF_Z20Azqp.webp 640w, /_astro/funnels.Brt2otMF_2nUL7.webp 750w, /_astro/funnels.Brt2otMF_Z2cahzC.webp 828w, /_astro/funnels.Brt2otMF_A5xer.webp 1080w, /_astro/funnels.Brt2otMF_1e0PBb.webp 1162w"><figcaption>Outlining funnels</figcaption></figure>
+<h2 id="the-conclusion">The conclusion</h2>
+<p>The Tasks feature has been living in our product for a year. We are now looking into automating tasks to help our customers create actions without a need to do so manually.</p></div><nav class="next" aria-label="Next case study" data-astro-cid-z7xolria><a href="/device-insight.html" class="next-link" data-astro-cid-z7xolria><span class="next-label" data-astro-cid-z7xolria>Next</span><span class="display next-title" data-astro-cid-z7xolria>Device Security Insights <span aria-hidden="true" data-astro-cid-z7xolria>→</span></span></a></nav></div></article></main><footer class="footer" data-astro-cid-jo6i4kqk><a class="cta" href="mailto:alinabochkacheva@gmail.com" data-astro-cid-jo6i4kqk>Let’s talk.</a><div class="details" data-astro-cid-jo6i4kqk><a href="mailto:alinabochkacheva@gmail.com" class="email" data-astro-cid-jo6i4kqk>alinabochkacheva@gmail.com</a><br data-astro-cid-jo6i4kqk><a href="https://www.linkedin.com/pub/alina-bochkacheva/6a/109/92b" class="linkedin" data-astro-cid-jo6i4kqk>LinkedIn</a></div></footer></div><script type="module">window.matchMedia(`(prefers-reduced-motion: reduce)`).matches&&document.querySelectorAll(`video[autoplay]`).forEach(e=>{e.removeAttribute(`autoplay`),e.pause()});</script></body></html>

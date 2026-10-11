@@ -1,211 +1,57 @@
-<!DOCTYPE html>
-
-<html>
-	<head>
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Alina Bochkacheva</title>
-		<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
-		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
-		<link rel="stylesheet" href="main.css" type="text/css">
-		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-		
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-54802940-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'UA-54802940-1');
-		</script>
-	</head>
-	
-	<body class="project-page">
-		<nav class="clearfix">
-			<div class="nav-wrapper">
-				<a class="home-link" href="index.html">&#171; Go home</a>
-					<ul>
-						<li><a href="#research">Research</a></li>
-						<li><a href="#process">Design process</a></li>
-						<li><a href="#ut">Usability testing</a></li>
-						<li><a href="#conclusion">The conclusion</a></li>
-					</ul>
-			</div>
-		</nav>
-		
-		<section class="slide top-slide">
-			<div class="wrapper">
-				<span class="company">SaferMe</span>
-        <h1 class="title" id="main_intro">
-				  Risk Register <span class="year-range">(2020)</span>
-				</h1>
-		
-				<div class="about-project">
-					<p>NZ legislation requires all businesses to have a Health and Safety management system (HSMS). This “system” is not a digital tool but a set of policies, processes, and procedures that combined together ensure the safety of workers and everyone around them. One of the requirements of the HSMS is to actively manage a risk register. The risk register contains a list of all hazards an employee might encounter on the job. Each hazard goes through an assessment process which includes identifying the impact of a hazard, assessing its risk rating, and determining what controls should be placed to minimize the impact, or ideally, completely remove it.</p>
-
-					<p>As a H&S product, our goal is to provide a complete set of digital tools to enable our customers to create HSMS. We have seen multiple requests for an easy way to create, manage, and utilize the risk register. </p>
-				</div>
-		
-			</div>
-		</section><!--End Intro-->
-		
-		<section class="slide step1" id="research">
-			<div class="project-step">
-				<h2>
-					Research
-				</h2>
-					
-				<div class="step-desc">
-					<p>First, we asked our customers to share their existing risk registers with us. We saw a lot of commonalities but still, there were quite a few differences. We decided, in order for us to develop the risk register feature properly, we needed real expert input. We invited four health & safety consultants to participate in a workshop. The goal of it was to find a common ground and see how we can create a “one size fits all” solution.</p>
-					
-					<p>We ran the following activities:
-						<ul>
-							<li>Asked each H&S consultant to draw us a risk register</li>
-							<li>Aligned them on the board and discussed the differences</li>
-							<li>Identified the most common risk scoring method</li>
-							<li>Established a review process for risk registers</li>
-							<li>Outlined which H&S forms use risk registers and in what manner</li>
-						</ul>
-					</p>
-
-					<p>We walked out with a clear risk register structure and an understanding of how risk registers are being used every day by workers.</p>
-
-				</div>
-					
-			</div>
-		</section><!--Research-->
-		
-		<section class="slide step2" id="process">
-			<div class="project-step">
-				<h2>
-					Design Process
-				</h2>
-					
-				<div class="step-desc">
-					<p>We decided to split this whole project into two stages:
-						<ul>
-							<li>Creating the risk register within SaferMe and allowing users to use it for the purpose of live database, with the ability to print and share.</li>
-							<li>Allow workers to access the risk register within health and safety forms. This will allow workers to search the register for hazards that pertain to their job.</li>
-						</ul>
-					</p>
-				</div>
-				
-				<div class="step-desc">
-					<span class="project-step-subtitle">Step 1: Sketching</span>
-					<p>After the workshop, I got pen and paper and started sketching the ideas. With paper sketches, it’s easy to share the ideas very quickly, while not getting bogged down with details.</p>
-				</div>
-				
-				<div class="step-desc">
-					<span class="project-step-subtitle">Step 2: High-fidelity prototypes</span>
-					<p>Prior to this project, I created a design pattern library. This library allowed me to move from paper sketches to high-fidelity prototypes very rapidly. </p>
-					
-					<p>Part 1: Creation of a risk register</p>
-				</div>
-				
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/rr/set-up-rr.png" style="max-width: 800px;">
-					<figcaption>Setting up a risk register</figcaption>
-				</figure>
-				
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/rr/risk-matrix.png" style="max-width: 800px;">
-					<figcaption>Configuring a risk matrix</figcaption>
-				</figure>
-				
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/rr/Add-Hazard.png" style="max-width: 800px;">
-					<figcaption>Adding a hazard to the risk register</figcaption>
-				</figure>
-				
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/rr/hazard-filled.png" style="max-width: 800px;">
-					<figcaption>Example of an entered hazard</figcaption>
-				</figure>
-				
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/rr/rr-with-hazards.png" style="max-width: 800px;">
-					<figcaption>The risk register with a couple of hazards entered</figcaption>
-				</figure>
-				
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/rr/View-hazard.png" style="max-width: 800px;">
-					<figcaption>Viewing a hazard</figcaption>
-				</figure>
-				
-				<div class="step-desc">
-					<p>Part 2: Allowing to use the risk register within H&S forms</p>
-				</div>
-				
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/rr/widget1-old.gif" style="max-width: 800px;">
-					<figcaption>Adding a list of hazards that pertain to the job on mobile</figcaption>
-				</figure>
-					
-			</div>
-		</section><!--Design process-->
-		
-		<section class="slide step3" id="ut">
-			<div class="project-step">
-				<h2>
-					Usability testings
-				</h2>
-					
-				<div class="step-desc">
-					
-					<p>We set up usability sessions with five customers to validate the following:
-						<ul>
-							<li>Can customers set up a risk register on their own?</li>
-							<li>Does the terminology align with their mental models?</li>
-							<li>Are there any other needs around the risk register that are missing?</li>
-							<li>Is it easy to use a risk register within the forms?</li>
-						</ul>
-					</p>
-					<p><strong>Results</strong></p>
-					<p>We had to modify some terminology and adjust the display of the risk matrix. However, the biggest challenge we discovered was on the usage of the risk register within forms. We learned that H&S managers didn’t want to make it too easy for workers to pick hazards. They needed a way for them to stop and think what they are about to do, and most importantly, implement proper controls. </p>
-					
-					<p>This led us to modifying the view of the picked hazards screen:
-						<ol>
-							<li>We added a visual element (exclamation mark) to give a sense there is something incomplete on the page</li>
-							<li>We added action buttons “Mark Reviewed” to each hazard. This would force workers to sign off on each hazard individually and mentally put the burden to actually review each hazard.</li>
-						</ol>
-					</p>
-
-				</div>
-				
-				<figure class="wide-image-container">
-					<img class="wide-image" src="images/rr/widget1-after-UT.gif" style="max-width: 800px;">
-					<figcaption>Updated prototype of the form on mobile</figcaption>
-				</figure>
-					
-			</div>
-		</section><!--UT-->
-		
-				<section class="slide step4" id="conclusion">
-					<div class="project-step">
-						<h2>
-							The conclusion
-						</h2>
-					
-						<div class="step-desc">
-							<p>This project was the first H&S feature where we worked alongside H&S experts to ensure accuracy and good fit. We formed a great partnership with those experts and were able to go back for constant feedback at every iteration.</p>
-
-							<p>The project is not implemented yet and set to be built in Q3 of 2021.</p>
-						</div>
-					
-					</div>
-				</section><!--End conclusion-->
-		
-		<footer class="contact">
-			<h1>Ready to contact?</h1>
-			<span>Email me:</span>
-			<a href="mailto:alinabochkacheva@gmail.com">alinabochkacheva@gmail.com</a> or connect with me on 
-			<a href="https://www.linkedin.com/pub/alina-bochkacheva/6a/109/92b" target="_blank">LinkedIn</a>
-			<span id="powered">No templates were harmed in creation of this website</span>
-		</footer>
-		
-	</body>
-	
-</html>
+<!DOCTYPE html><html lang="en" data-astro-cid-hkbrpulz><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Risk Register · Alina Bochkacheva</title><meta name="description" content="Risk Register, SaferMe: a case study by Alina Bochkacheva."><link rel="canonical" href="https://www.alina.io/risk-register.html"><meta property="og:title" content="Risk Register · Alina Bochkacheva"><meta property="og:description" content="Risk Register, SaferMe: a case study by Alina Bochkacheva."><meta property="og:url" content="https://www.alina.io/risk-register.html"><meta name="theme-color" content="#191a1f"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"><!-- Analytics: add the cookie-free snippet here once an account exists (GoatCounter, Cloudflare Web Analytics, …). --><link rel="stylesheet" href="/_astro/Base.BF7hllnY.css"><link rel="stylesheet" href="/_astro/_slug_.BgnPWN0L.css"></head><body data-astro-cid-hkbrpulz><a class="skip-link" href="#main" data-astro-cid-hkbrpulz>Skip to content</a><div class="page" data-astro-cid-hkbrpulz><header class="nav" data-astro-cid-wpvy4v7s><a class="monogram" href="/" aria-label="Alina Bochkacheva, home" data-astro-cid-wpvy4v7s>A.B.</a><nav aria-label="Main" data-astro-cid-wpvy4v7s><ul data-astro-cid-wpvy4v7s><li data-astro-cid-wpvy4v7s><a href="/#work" data-astro-cid-wpvy4v7s>All work</a></li><li data-astro-cid-wpvy4v7s><a class="hire" href="mailto:alinabochkacheva@gmail.com" data-astro-cid-wpvy4v7s>Hire me <span aria-hidden="true" data-astro-cid-wpvy4v7s>↗</span></a></li></ul></nav></header><main id="main" tabindex="-1" data-astro-cid-hkbrpulz><article class="case" data-astro-cid-z7xolria><header class="case-head" data-astro-cid-z7xolria><p class="eyebrow" data-astro-cid-z7xolria>SaferMe · 2020</p><h1 class="display case-title" data-astro-cid-z7xolria>Risk Register</h1><div class="double-bar case-bar" aria-hidden="true" data-astro-cid-z7xolria></div></header><div class="case-body" data-astro-cid-z7xolria><nav class="toc" aria-label="On this page" data-astro-cid-z7xolria><p class="toc-label" data-astro-cid-z7xolria>On this page</p><ol data-astro-cid-z7xolria><li data-astro-cid-z7xolria><a href="#research" data-astro-cid-z7xolria>Research</a></li><li data-astro-cid-z7xolria><a href="#design-process" data-astro-cid-z7xolria>Design Process</a></li><li data-astro-cid-z7xolria><a href="#usability-testings" data-astro-cid-z7xolria>Usability testings</a></li><li data-astro-cid-z7xolria><a href="#the-conclusion" data-astro-cid-z7xolria>The conclusion</a></li></ol></nav><div class="prose" data-astro-cid-z7xolria><p>NZ legislation requires all businesses to have a Health and Safety management system (HSMS). This “system” is not a digital tool but a set of policies, processes, and procedures that combined together ensure the safety of workers and everyone around them. One of the requirements of the HSMS is to actively manage a risk register. The risk register contains a list of all hazards an employee might encounter on the job. Each hazard goes through an assessment process which includes identifying the impact of a hazard, assessing its risk rating, and determining what controls should be placed to minimize the impact, or ideally, completely remove it.</p>
+<p>As a H&#x26;S product, our goal is to provide a complete set of digital tools to enable our customers to create HSMS. We have seen multiple requests for an easy way to create, manage, and utilize the risk register.</p>
+<h2 id="research">Research</h2>
+<p>First, we asked our customers to share their existing risk registers with us. We saw a lot of commonalities but still, there were quite a few differences. We decided, in order for us to develop the risk register feature properly, we needed real expert input. We invited four health &#x26; safety consultants to participate in a workshop. The goal of it was to find a common ground and see how we can create a “one size fits all” solution.</p>
+<p>We ran the following activities:</p>
+<ul>
+<li>Asked each H&#x26;S consultant to draw us a risk register</li>
+<li>Aligned them on the board and discussed the differences</li>
+<li>Identified the most common risk scoring method</li>
+<li>Established a review process for risk registers</li>
+<li>Outlined which H&#x26;S forms use risk registers and in what manner</li>
+</ul>
+<p>We walked out with a clear risk register structure and an understanding of how risk registers are being used every day by workers.</p>
+<h2 id="design-process">Design Process</h2>
+<p>We decided to split this whole project into two stages:</p>
+<ul>
+<li>Creating the risk register within SaferMe and allowing users to use it for the purpose of live database, with the ability to print and share.</li>
+<li>Allow workers to access the risk register within health and safety forms. This will allow workers to search the register for hazards that pertain to their job.</li>
+</ul>
+<h3 id="step-1-sketching">Step 1: Sketching</h3>
+<p>After the workshop, I got pen and paper and started sketching the ideas. With paper sketches, it’s easy to share the ideas very quickly, while not getting bogged down with details.</p>
+<h3 id="step-2-high-fidelity-prototypes">Step 2: High-fidelity prototypes</h3>
+<p>Prior to this project, I created a design pattern library. This library allowed me to move from paper sketches to high-fidelity prototypes very rapidly.</p>
+<p>Part 1: Creation of a risk register</p>
+<figure><img alt="SaferMe admin screen titled Set Up Your Risk Register, with two steps: configure your risk matrix, then add hazards. The Add Hazard button stays disabled until the matrix is set up." loading="lazy" decoding="async" sizes="(min-width: 1680px) 1680px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="1680" height="914" src="/_astro/set-up-rr.DYRL7gyi_Z11yRHh.webp" srcset="/_astro/set-up-rr.DYRL7gyi_Z1e63Xw.webp 640w, /_astro/set-up-rr.DYRL7gyi_1Xxvs2.webp 750w, /_astro/set-up-rr.DYRL7gyi_1nXDCV.webp 828w, /_astro/set-up-rr.DYRL7gyi_Z1IVJXq.webp 1080w, /_astro/set-up-rr.DYRL7gyi_1TVHXJ.webp 1280w, /_astro/set-up-rr.DYRL7gyi_Z29vBMA.webp 1668w, /_astro/set-up-rr.DYRL7gyi_Z11yRHh.webp 1680w"><figcaption>Setting up a risk register</figcaption></figure>
+<figure><img alt="Risk matrix settings with editable scales for likelihood (Rare to Almost certain), consequence (Insignificant to Catastrophic) and risk level (Low, Moderate, High, Extreme), above a colour-coded 5 by 5 preview grid." loading="lazy" decoding="async" sizes="(min-width: 1680px) 1680px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="1680" height="948" src="/_astro/risk-matrix.C61beljr_Z1lAtiK.webp" srcset="/_astro/risk-matrix.C61beljr_Z26XbTq.webp 640w, /_astro/risk-matrix.C61beljr_zPhSv.webp 750w, /_astro/risk-matrix.C61beljr_ZE2Ytl.webp 828w, /_astro/risk-matrix.C61beljr_Z2ji7IV.webp 1080w, /_astro/risk-matrix.C61beljr_NGTkp.webp 1280w, /_astro/risk-matrix.C61beljr_Z1XdeNK.webp 1668w, /_astro/risk-matrix.C61beljr_Z1lAtiK.webp 1680w"><figcaption>Configuring a risk matrix</figcaption></figure>
+<figure><img alt="Empty Add Hazard form with fields for the hazard, risks, harm, initial risk rating, controls, residual risk rating and next review date. Each rating is calculated from likelihood and consequence dropdowns." loading="lazy" decoding="async" sizes="(min-width: 1680px) 1680px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="1680" height="1248" src="/_astro/Add-Hazard.BOVm9yuN_L7kAo.webp" srcset="/_astro/Add-Hazard.BOVm9yuN_ZrYcV.webp 640w, /_astro/Add-Hazard.BOVm9yuN_F7RQg.webp 750w, /_astro/Add-Hazard.BOVm9yuN_1p4DbQ.webp 828w, /_astro/Add-Hazard.BOVm9yuN_1NpIUE.webp 1080w, /_astro/Add-Hazard.BOVm9yuN_ZXraEe.webp 1280w, /_astro/Add-Hazard.BOVm9yuN_uF2kF.webp 1668w, /_astro/Add-Hazard.BOVm9yuN_L7kAo.webp 1680w"><figcaption>Adding a hazard to the risk register</figcaption></figure>
+<figure><img alt="The Add Hazard form filled in for silica dust: three risks, silicosis and cancer as harms, an initial rating of Extreme (25/25), three controls such as wearing a mask, and a residual rating of Moderate (9/25)." loading="lazy" decoding="async" sizes="(min-width: 1680px) 1680px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="1680" height="1488" src="/_astro/hazard-filled.VunwkpNf_Z18SpM3.webp" srcset="/_astro/hazard-filled.VunwkpNf_1JTICG.webp 640w, /_astro/hazard-filled.VunwkpNf_Z16Ar8r.webp 750w, /_astro/hazard-filled.VunwkpNf_TGe3u.webp 828w, /_astro/hazard-filled.VunwkpNf_Z1NEXlb.webp 1080w, /_astro/hazard-filled.VunwkpNf_sk3TJ.webp 1280w, /_astro/hazard-filled.VunwkpNf_1coHEn.webp 1668w, /_astro/hazard-filled.VunwkpNf_Z18SpM3.webp 1680w"><figcaption>Example of an entered hazard</figcaption></figure>
+<figure><img alt="Risk register table with two hazards, silica dust and hot water, listing their risks, harms and controls, initial and residual ratings as coloured dots, and next review dates. One review date is flagged as overdue." loading="lazy" decoding="async" sizes="(min-width: 1680px) 1680px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="1680" height="914" src="/_astro/rr-with-hazards.CwIy7yNk_rtUx6.webp" srcset="/_astro/rr-with-hazards.CwIy7yNk_1IPeK5.webp 640w, /_astro/rr-with-hazards.CwIy7yNk_1NdORA.webp 750w, /_astro/rr-with-hazards.CwIy7yNk_Z1C1y0x.webp 828w, /_astro/rr-with-hazards.CwIy7yNk_5wtd5.webp 1080w, /_astro/rr-with-hazards.CwIy7yNk_DQxo0.webp 1280w, /_astro/rr-with-hazards.CwIy7yNk_RtTf5.webp 1668w, /_astro/rr-with-hazards.CwIy7yNk_rtUx6.webp 1680w"><figcaption>The risk register with a couple of hazards entered</figcaption></figure>
+<figure><img alt="Detail page for the hot water hazard showing its risks, harms, ratings and an overdue review date, next to a change history of dated edits with comments from the people who made them." loading="lazy" decoding="async" sizes="(min-width: 1680px) 1680px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="1680" height="914" src="/_astro/View-hazard.SLx5t8PG_Gex16.webp" srcset="/_astro/View-hazard.SLx5t8PG_Z17jX1x.webp 640w, /_astro/View-hazard.SLx5t8PG_EpD9E.webp 750w, /_astro/View-hazard.SLx5t8PG_vOYqp.webp 828w, /_astro/View-hazard.SLx5t8PG_Z1sXUX.webp 1080w, /_astro/View-hazard.SLx5t8PG_Z18KLeD.webp 1280w, /_astro/View-hazard.SLx5t8PG_Z1AqmXm.webp 1668w, /_astro/View-hazard.SLx5t8PG_Gex16.webp 1680w"><figcaption>Viewing a hazard</figcaption></figure>
+<p>Part 2: Allowing to use the risk register within H&#x26;S forms</p>
+<figure>
+  <video src="/media/risk-register/widget1-old.mp4" autoplay loop muted playsinline controls preload="metadata" aria-label="Prototype on an Android phone: a worker searches a list of hazards, ticks drop saw, power tools and silica dust, expands each one to see its risks and harms, then sees the controls and residual risk rating in the submitted report."></video>
+  <figcaption>Adding a list of hazards that pertain to the job on mobile</figcaption>
+</figure>
+<h2 id="usability-testings">Usability testings</h2>
+<p>We set up usability sessions with five customers to validate the following:</p>
+<ul>
+<li>Can customers set up a risk register on their own?</li>
+<li>Does the terminology align with their mental models?</li>
+<li>Are there any other needs around the risk register that are missing?</li>
+<li>Is it easy to use a risk register within the forms?</li>
+</ul>
+<p><strong>Results</strong></p>
+<p>We had to modify some terminology and adjust the display of the risk matrix. However, the biggest challenge we discovered was on the usage of the risk register within forms. We learned that H&#x26;S managers didn’t want to make it too easy for workers to pick hazards. They needed a way for them to stop and think what they are about to do, and most importantly, implement proper controls.</p>
+<p>This led us to modifying the view of the picked hazards screen:</p>
+<ol>
+<li>We added a visual element (exclamation mark) to give a sense there is something incomplete on the page</li>
+<li>We added action buttons “Mark Reviewed” to each hazard. This would force workers to sign off on each hazard individually and mentally put the burden to actually review each hazard.</li>
+</ol>
+<figure>
+  <video src="/media/risk-register/widget1-after-UT.mp4" autoplay loop muted playsinline controls preload="metadata" aria-label="Updated prototype: each picked hazard shows an exclamation mark until the worker checks its controls and taps Mark Reviewed. Once all three are reviewed they can continue, and the submitted report lists the hazards on site."></video>
+  <figcaption>Updated prototype of the form on mobile</figcaption>
+</figure>
+<h2 id="the-conclusion">The conclusion</h2>
+<p>This project was the first H&#x26;S feature where we worked alongside H&#x26;S experts to ensure accuracy and good fit. We formed a great partnership with those experts and were able to go back for constant feedback at every iteration.</p>
+<p>The project is not implemented yet and set to be built in Q3 of 2021.</p></div><nav class="next" aria-label="Next case study" data-astro-cid-z7xolria><a href="/tasks.html" class="next-link" data-astro-cid-z7xolria><span class="next-label" data-astro-cid-z7xolria>Next</span><span class="display next-title" data-astro-cid-z7xolria>Tasks <span aria-hidden="true" data-astro-cid-z7xolria>→</span></span></a></nav></div></article></main><footer class="footer" data-astro-cid-jo6i4kqk><a class="cta" href="mailto:alinabochkacheva@gmail.com" data-astro-cid-jo6i4kqk>Let’s talk.</a><div class="details" data-astro-cid-jo6i4kqk><a href="mailto:alinabochkacheva@gmail.com" class="email" data-astro-cid-jo6i4kqk>alinabochkacheva@gmail.com</a><br data-astro-cid-jo6i4kqk><a href="https://www.linkedin.com/pub/alina-bochkacheva/6a/109/92b" class="linkedin" data-astro-cid-jo6i4kqk>LinkedIn</a></div></footer></div><script type="module">window.matchMedia(`(prefers-reduced-motion: reduce)`).matches&&document.querySelectorAll(`video[autoplay]`).forEach(e=>{e.removeAttribute(`autoplay`),e.pause()});</script></body></html>
